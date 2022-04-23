@@ -1,6 +1,6 @@
 import { Box, Button, Link } from "@obolnetwork/obol-ui";
 import Image from "next/image";
-// import NextLink from "next/link";
+import NextLink from "next/link";
 export const Navbar = (): JSX.Element => {
   return (
     <Box css={{ display: "flex", width: "$full" }}>
@@ -16,10 +16,27 @@ export const Navbar = (): JSX.Element => {
           alignItems: "center",
         }}
       >
-        <Link variant="docs">Docs</Link>
-        <Link variant="docs">Blog</Link>
-        <Link variant="docs">Jobs</Link>
-        <Button variant="nav">Join the Community</Button>
+        <Link variant="docs" target="_blank" href="https://docs.obol.tech/">
+          Docs
+        </Link>
+        <Link variant="docs" target="_blank" href="https://blog.obol.tech/">
+          Blog
+        </Link>
+        <Link
+          variant="docs"
+          target="_blank"
+          href="https://jobs.lever.co/obol-tech/"
+        >
+          Jobs
+        </Link>
+        <Button
+          as="a"
+          target="_blank"
+          href="https://discord.com/invite/n6ebKsX46w"
+          variant="nav"
+        >
+          Join the Community
+        </Button>
       </Box>
     </Box>
   );

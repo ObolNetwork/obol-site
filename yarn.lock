@@ -1507,10 +1507,10 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@obolnetwork/obol-ui@latest":
-  version "0.1.4"
-  resolved "https://npm.pkg.github.com/download/@obolnetwork/obol-ui/0.1.4/f9300c3ed2a77d692f3701595f1547d62278fb989e25957cc9d50f79d51b7c8d#4f748859316faa7f4dc201f48073ff6c04d80ff2"
-  integrity sha512-pjDO3wbwItbM230E/jQUhBYkRvpZLYZ9I1qQ2DrtVMOw06vVbyM8Snx0bYAQU8lJgl5C3zVALLt+4GmbPwsI8Q==
+"@obolnetwork/obol-ui@~0.1.6":
+  version "0.1.6"
+  resolved "https://npm.pkg.github.com/download/@obolnetwork/obol-ui/0.1.6/ed4f4c879ddeccf8bf1a3857669864bbd92d928354fa9c6c14b360a75cb2848a#f6658f42eec5efc195c92d938fd3491a7007bce4"
+  integrity sha512-pFR+LcBZckU3Y5N5psj6EAcIuZCYjOuXi2PYkVAi2fK06H5sdigm1D8lPRi0zn2fAjwZkI8DWF77sEhxoUcL2g==
   dependencies:
     "@radix-ui/react-tabs" "^0.1.5"
     "@stitches/react" "^1.2.7"
