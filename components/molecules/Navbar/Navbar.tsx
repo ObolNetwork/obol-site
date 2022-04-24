@@ -1,6 +1,5 @@
-import { Box, Button, Link } from "@obolnetwork/obol-ui";
+import { Box, Button, Link, Text } from "@obolnetwork/obol-ui";
 import Image from "next/image";
-import NextLink from "next/link";
 export const Navbar = (): JSX.Element => {
   return (
     <Box css={{ display: "flex", width: "$full" }}>
@@ -35,7 +34,7 @@ export const Navbar = (): JSX.Element => {
           href="https://discord.com/invite/n6ebKsX46w"
           variant="nav"
         >
-          Join the Community
+         Join the Community
         </Button>
       </Box>
     </Box>

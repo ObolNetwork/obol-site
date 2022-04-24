@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 html,
 body {
   background: linear-gradient(180deg, #01181E 0%, #011014 62.96%);
@@ -14,24 +13,5 @@ a {
 
 * {
   box-sizing: border-box;
-}
-.neon-create {
-  color: #3CD2DD;
-  text-shadow: 0px 0px #3CD2DD, 0 0 30px #3CD2DD, 0 0 20px #3CD2DD;
-}
-
-.neon-test {
-  color: #DD603C;
-  text-shadow: 0px 0px #DD603C, 0 0 30px #DD603C, 0 0 20px #DD603C;
-}
-
-.neon-run {
-  color: #2FE4AB;
-  text-shadow: 0px 0px #2FE4AB, 0 0 30px #2FE4AB, 0 0 20px #2FE4AB;
-}
-
-.neon-co {
-  color: #9167E4;
-  text-shadow: 0px 0px #9167E4, 0 0 30px #9167E4, 0 0 20px #9167E4;
 }
 

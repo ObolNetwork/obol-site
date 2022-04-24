@@ -1,6 +1,5 @@
 import { Box, Button, Text } from "@obolnetwork/obol-ui";
 import Image from "next/image";
-import { NeonText } from "../../atoms/NeonText/NeonText";
 export const HeroSection = (): JSX.Element => {
   return (
     <Box css={{ display: "flex", width: "$full" }}>
@@ -9,9 +8,8 @@ export const HeroSection = (): JSX.Element => {
           display: "flex",
           flex: 1,
           flexDirection: "column",
-          justifyContent: "flex-start",
+          justifyContent: "center",
           alignItems: "flex-start",
-          pt: "$xl",
           gap: "$xl",
         }}
       >
@@ -26,33 +24,32 @@ export const HeroSection = (): JSX.Element => {
         >
           <Text
             css={{
-              width: "80%",
               fontWeight: "$bold",
               lineHeight: "calc($xl * 2)",
-            }}
-            size="10"
-            color="white"
+              fontSize: "calc($10 + 8px)"
+            }}            
+            color="textLight"
           >
             Building Distributed Validators for Ethereum
           </Text>
           <Text
             css={{
-              width: "68%",
+              width: "80%",
               lineHeight: "$xl",
             }}
-            size="5"
+            size="7"
             color="textMiddle"
           >
             The Obol Network is an ecosystem for trust minimized staking that
-            allows people to <span className="neon-create">create</span>,{" "}
-            <span className="neon-test">test</span>,{" "}
-            <span className="neon-run">run</span> &{" "}
-            <span className="neon-co">co-ordinate</span> distributed validators
+            allows people to <Text css={{display: 'inline-block'}} color="teal" glow>create</Text>,
+            <Text css={{display: 'inline'}} color="orange" glow> test</Text>,
+            <Text css={{display: 'inline'}} color="obolMidGreen" glow> run</Text> &
+            <Text css={{display: 'inline'}} color="purple" glow> co-ordinate</Text> distributed validators
           </Text>
         </Box>
         {/* TODO: set the right color on obol-ui */}
 
-        <Button css={{ color: "#011216", fontWeight: "$bold" }}>
+        <Button css={{ color: "#011216" }}>
           Read the Docs
         </Button>
       </Box>
@@ -67,8 +64,8 @@ export const HeroSection = (): JSX.Element => {
         <Image
           src="/assets/hexapod.svg"
           alt="Obol Logo"
-          width={608*1.5}
-          height={398*1.5}
+          width={912}
+          height={597}
         />
       </Box>
     </Box>

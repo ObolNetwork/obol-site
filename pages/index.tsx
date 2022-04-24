@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Box } from "@obolnetwork/obol-ui";
 import { Navbar } from "../components/molecules/Navbar/Navbar";
 import { HeroSection } from "../components/organisms/HeroSection/HeroSection";
+import { OurMission } from "../components/organisms/OurMission/OurMission";
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,8 @@ const Home: NextPage = () => {
         }}
       >
         <HeroSection />
+        <Box css={{ mt: "11rem" }} />
+        <OurMission />
       </Box>
     </Box>
   );
