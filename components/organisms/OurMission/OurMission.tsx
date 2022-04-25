@@ -16,7 +16,7 @@ export const OurMission = () => {
         borderRadius: "$5",
       }}
     >
-      <Text css={{ fontWeight: "$bold" }} size="9" color="textLight">
+      <Text css={{ fontWeight: "$bold", lineHeight: "$taller" }} size="9" color="textLight">
         Our Mission
       </Text>
 
