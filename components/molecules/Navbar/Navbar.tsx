@@ -1,10 +1,22 @@
 import { Box, Button, Link, Text } from "@obolnetwork/obol-ui";
 import Image from "next/image";
+import { useMediaQuery, MediaQueryKeys } from "../../utils/hooks";
+
 export const Navbar = (): JSX.Element => {
+  const screenDownSm = useMediaQuery(MediaQueryKeys.sm);
   return (
     <Box css={{ display: "flex", width: "$full" }}>
       <Box css={{ display: "flex", flex: 1, justifyContent: "flex-start" }}>
-        <Image src="/obol.svg" alt="Obol Logo" width={103} height={24} />
+        {!screenDownSm ? (
+          <Image
+            src="/obol-icon-light-bg.svg"
+            alt="Obol"
+            width={42}
+            height={23}
+          />
+        ) : (
+          <Image src="/obol.svg" alt="Obol Logo" width={103} height={24} />
+        )}
       </Box>
       <Box
         css={{
@@ -34,7 +46,7 @@ export const Navbar = (): JSX.Element => {
           href="https://discord.com/invite/n6ebKsX46w"
           variant="nav"
         >
-         Join the Community
+          Join the Community
         </Button>
       </Box>
     </Box>

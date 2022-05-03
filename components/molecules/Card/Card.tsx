@@ -13,15 +13,16 @@ export const Card: React.FC<CardProps> = (props): JSX.Element => {
     <Box
       css={{
         display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
         p: "$xl",
         gap: "$xl",
+        flexDirection: "column",
+        alignItems: "center",
         background: "rgba(252, 253, 252, 0.05)",
-        backdropFilter: "blur(54px)",
         borderRadius: "$4",
-        maxWidth: "25rem"
+        width: "30%",
+        "@sm": {
+          width: "auto",
+        },
       }}
     >
       <Image {...props.image} alt={props.heading} />
