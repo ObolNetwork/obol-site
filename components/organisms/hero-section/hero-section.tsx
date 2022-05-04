@@ -48,7 +48,7 @@ export const HeroSection = (): JSX.Element => {
               fontSize: "calc($10 + 8px)",
               "@sm": {
                 textAlign: "center",
-                fontSize: "$10",
+                fontSize: "45px",
               },
             }}
             color="textLight"
@@ -67,12 +67,21 @@ export const HeroSection = (): JSX.Element => {
                 },
               }}
             >
-              <Image
-                src="/assets/hexapod.svg"
-                alt="Obol Logo"
-                width={912}
-                height={597}
-              />
+              {!screenDownSm ? (
+                <Image
+                  src="/assets/hexapod.svg"
+                  alt="Obol Logo"
+                  width={912}
+                  height={597}
+                />
+              ) : (
+                <Image
+                  src="/assets/hexapod-mobile.svg"
+                  alt="Obol Logo"
+                  width={343}
+                  height={226}
+                />
+              )}
             </Box>
           )}
           <Text
