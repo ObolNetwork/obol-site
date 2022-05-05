@@ -90,9 +90,10 @@ export const HeroSection = (): JSX.Element => {
               lineHeight: "$xl",
               "@sm": {
                 textAlign: "center",
+                width: "auto",
               },
             }}
-            size="7"
+            size={{ '@initial': '7', '@sm': '5'}}
             color="textMiddle"
           >
             The Obol Network is an ecosystem for trust minimized staking that
