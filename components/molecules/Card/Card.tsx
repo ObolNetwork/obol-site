@@ -25,7 +25,9 @@ export const Card: React.FC<CardProps> = (props): JSX.Element => {
         },
       }}
     >
-      <Image {...props.image} alt={props.heading} />
+      <Box className="svg-shadow">
+        <Image className="block-image" {...props.image} alt={props.heading} />
+      </Box>
       <Box
         css={{
           display: "flex",
