@@ -1,5 +1,5 @@
 import { Box, Text } from "@obolnetwork/obol-ui";
-import { Card } from "../../molecules/card/card";
+import { Card } from "../../molecules/Card/Card";
 
 export const OurMission = () => {
   return (
