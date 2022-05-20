@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Box } from "@obolnetwork/obol-ui";
-import { Navbar } from "../components/molecules/navbar/navbar";
+import { Navbar } from "../components/molecules/Navbar/Navbar";
 import { HeroSection } from "../components/organisms/hero-section/hero-section";
 import { OurMission } from "../components/organisms/our-mission/our-mission";
 import { useMediaQuery, MediaQueryKeys } from "../components/utils/hooks";

@@ -1,2 +1,2 @@
-export * from './card/card';
-export * from './navbar/navbar';
+export * from './card/Card';
+export * from './navbar/Navbar';
