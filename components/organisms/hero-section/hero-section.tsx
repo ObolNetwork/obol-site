@@ -1,4 +1,4 @@
-import { Box, Button, Text } from "@obolnetwork/obol-ui";
+import { Box, Button, Text, } from "@obolnetwork/obol-ui";
 import Image from "next/image";
 import { useMediaQuery, MediaQueryKeys } from "../../utils/hooks";
 
@@ -37,7 +37,7 @@ export const HeroSection = (): JSX.Element => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              paddingTop: "$1xl",
+              paddingTop: "$2xl",
             },
           }}
         >
@@ -98,21 +98,21 @@ export const HeroSection = (): JSX.Element => {
           >
             The Obol Network is an ecosystem for trust minimized staking that
             allows people to{" "}
-            <Text css={{ display: "inline-block" }} color="teal" glow>
+            <Text css={{ display: "inline-block" }} color="create" glow>
               create
             </Text>
             ,
-            <Text css={{ display: "inline" }} color="orange" glow>
+            <Text css={{ display: "inline" }} color="test" glow>
               {" "}
               test
             </Text>
             ,
-            <Text css={{ display: "inline" }} color="obolMidGreen" glow>
+            <Text css={{ display: "inline" }} color="obolGreen" glow>
               {" "}
               run
             </Text>{" "}
             &
-            <Text css={{ display: "inline" }} color="purple" glow>
+            <Text css={{ display: "inline" }} color="coordinate" glow>
               {" "}
               co-ordinate
             </Text>{" "}

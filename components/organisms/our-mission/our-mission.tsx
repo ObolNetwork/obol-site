@@ -1,5 +1,5 @@
 import { Box, Text } from "@obolnetwork/obol-ui";
-import { Card } from "../../molecules/Card/Card";
+import { Card } from "../../molecules/card/card";
 
 export const OurMission = () => {
   return (
@@ -8,7 +8,7 @@ export const OurMission = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        p: "$1xl",
+        p: "$2xl",
         "@sm": { px: "$lg" },
         gap: "$lg",
         background: "rgba(12, 35, 42, 0.5)",
@@ -28,7 +28,7 @@ export const OurMission = () => {
       <Box
         css={{
           display: "flex",
-          "@sm": { flexDirection: "column", px: "$md" },
+          "@sm": { flexDirection: "column", px: "$xs" },
           gap: "$xl",
         }}
       >
