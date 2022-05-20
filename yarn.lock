@@ -348,13 +348,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@obolnetwork/obol-ui@~0.1.8":
-  version "0.1.8"
-  resolved "https://npm.pkg.github.com/download/@obolnetwork/obol-ui/0.1.8/99be8ae0d462b6d4b34259331b6dec609709b303d544d27f1063e87160b1b3d3#025117d415bf85c62421cb9a4aae562dfd2d82cf"
-  integrity sha512-LZzLKDBcYvZdQi81rqJY+y5nKMZ5a/PZfzrbipaAdIkL4L+0/fh4lqtWyfp0MCqqqWQIOjrco3J+97KwzlkrzA==
+"@obolnetwork/obol-ui@~0.1.12":
+  version "0.1.12"
+  resolved "https://npm.pkg.github.com/download/@obolnetwork/obol-ui/0.1.12/7b3ed92f8e05d4d5b5bc05b6aebe9431ad4905e568136ef2ebbf33b7f50858b0#7f56d048774eedb05a84742062d8da6ee9a757fd"
+  integrity sha512-uce1l0IEghSyTV5LlRM1a9JtHVkzX/l1cN/GN4BELSG60jeanHy6j9u+5YdWeXjFprFx4Y8dMYsBbhF+7H3Bdg==
   dependencies:
     "@radix-ui/react-tabs" "^0.1.5"
-    "@stitches/react" "^1.2.7"
+    "@stitches/react" "~1.2.8"
     next "12.1.0"
     react "17.0.2"
     react-dom "17.0.2"
@@ -470,7 +470,7 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.3.tgz#6801033be7ff87a6b7cadaf5b337c9f366a3c4b0"
   integrity sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==
 
-"@stitches/react@^1.2.7":
+"@stitches/react@^1.2.7", "@stitches/react@~1.2.8":
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
   integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==

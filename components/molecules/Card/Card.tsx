@@ -31,7 +31,7 @@ export const Card: React.FC<CardProps> = (props): JSX.Element => {
       <Box
         css={{
           display: "flex",
-          gap: "$md",
+          gap: "$xs",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",

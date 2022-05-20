@@ -12,11 +12,11 @@ export const Navbar = (): JSX.Element => {
       css={{
         display: "flex",
         pt: "$xl",
-        px: "calc($2xl * 2)",
+        px: "calc($3xl * 2)",
         "@sm": {
           px: 0,
-          pt: "16px",
-          pb: "16px",
+          pt: "$xxs",
+          pb: "$xxs",
         },
       }}
     >
@@ -59,7 +59,7 @@ export const Navbar = (): JSX.Element => {
           css={{
             display: "flex",
             flex: 1,
-            gap: "$1xl",
+            gap: "$2xl",
             justifyContent: "flex-end",
             alignItems: "center",
           }}
