@@ -1,5 +1,11 @@
-import { Box, Text } from "@obolnetwork/obol-ui";
-import { Card } from "../../molecules/card/card";
+import {
+  Box,
+  Text,
+  Card,
+  CodeIcon,
+  PublicGoodIcon,
+  TrustMinimisedIcon,
+} from "@obolnetwork/obol-ui";
 
 export const OurMission = () => {
   return (
@@ -32,26 +38,19 @@ export const OurMission = () => {
           gap: "$xl",
         }}
       >
-        <Card
-          image={{ src: "/assets/code.svg", width: "48px", height: "48px" }}
+        <Card        
+          image={<CodeIcon />}
           heading="Open Source"
-          subheading="The Obol Network will forever be open source and permissionless. The impact of distributed validators lies in their accessibility."
+          subheading="The Obol Network will forever be open source and permissionless. The impact of distributed validators lies in their accessibility."          
         />
+
         <Card
-          image={{
-            src: "/assets/public-good.svg",
-            width: "48px",
-            height: "48px",
-          }}
+          image={<PublicGoodIcon />}
           heading="Public Good"
           subheading="All fee's collected in Obol V1 will be granted through retroactive public goods funding. Long term problems call for regenerative circular economics."
         />
         <Card
-          image={{
-            src: "/assets/trust-minimised.svg",
-            width: "48px",
-            height: "48px",
-          }}
+          image={<TrustMinimisedIcon />}
           heading="Trust Minimised"
           subheading="Obol is committed to using technology and cryptography to reduce the need to trust any single staking operator. Removing this trusts is a core pillar to keeping stake decentralized."
         />
