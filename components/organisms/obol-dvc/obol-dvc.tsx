@@ -12,7 +12,7 @@ export const ObolDvc = () => {
   return (
     <Container alignItems="start">
       <Container
-        css={{ width: "35%", "@sm": { width: "100%" }, gap: "$2xl" }}
+        css={{ width: "40%", "@sm": { width: "100%" }, gap: "$2xl" }}
         variant="textContent"
         ghost
       >
