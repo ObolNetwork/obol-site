@@ -1,28 +1,15 @@
 import {
-  Box,
   Text,
   Card,
   CodeIcon,
   PublicGoodIcon,
   TrustMinimisedIcon,
+  Container,
 } from "@obolnetwork/obol-ui";
 
 export const OurMission = () => {
   return (
-    <Box
-      css={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        p: "$2xl",
-        "@sm": { px: "$lg" },
-        gap: "$lg",
-        background: "rgba(12, 35, 42, 0.5)",
-        border: "2px solid rgba(255, 255, 255, 0.05)",
-        borderRadius: "$5",
-        width: "auto",
-      }}
-    >
+    <Container>
       <Text
         css={{ fontWeight: "$bold", lineHeight: "$taller" }}
         size="9"
@@ -31,19 +18,14 @@ export const OurMission = () => {
         Our Mission
       </Text>
 
-      <Box
-        css={{
-          display: "flex",
-          "@sm": { flexDirection: "column", px: "$xs" },
-          gap: "$xl",
-        }}
-      >
-        <Card        
+      <Container layout="row" ghost>
+        <Card
           image={<CodeIcon />}
           heading="Open Source"
-          subheading="The Obol Network will forever be open source and permissionless. The impact of distributed validators lies in their accessibility."          
+          subheading="The Obol Network will forever be open source and permissionless. The impact of distributed validators lies in their accessibility."
+          contentAlign="start"
+          link="https://obol.tech"
         />
-
         <Card
           image={<PublicGoodIcon />}
           heading="Public Good"
@@ -54,7 +36,7 @@ export const OurMission = () => {
           heading="Trust Minimised"
           subheading="Obol is committed to using technology and cryptography to reduce the need to trust any single staking operator. Removing this trusts is a core pillar to keeping stake decentralized."
         />
-      </Box>
-    </Box>
+      </Container>
+    </Container>
   );
 };

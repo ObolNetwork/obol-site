@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Box } from "@obolnetwork/obol-ui";
-import { Navbar } from "../components/molecules/Navbar/Navbar";
+import { Navbar } from "../components/molecules";
 import { HeroSection } from "../components/organisms/hero-section/hero-section";
 import { OurMission } from "../components/organisms/our-mission/our-mission";
 import { useMediaQuery, MediaQueryKeys } from "../components/utils/hooks";
+import { HowDvsWork } from "../components/organisms/how-dvs-work/how-dvs-work";
+import { ObolDvc } from "../components/organisms/obol-dvc/obol-dvc";
+import { BuildWithObol } from "../components/organisms/build-with-obol/build-with-obol";
 const Home: NextPage = () => {
   const screenDownSm = useMediaQuery(MediaQueryKeys.sm);
   return (
@@ -35,6 +38,9 @@ const Home: NextPage = () => {
         <HeroSection />
         {!screenDownSm && <Box css={{ mt: "11rem" }} />}
         <OurMission />
+        <HowDvsWork />
+        <ObolDvc />
+        <BuildWithObol />
       </Box>
     </Box>
   );

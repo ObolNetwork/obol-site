@@ -11,7 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@obolnetwork/obol-ui": "^0.1.16",
+    "@obolnetwork/obol-ui": "~0.1.25",
     "@stitches/react": "^1.2.7",
     "next": "12.1.0",
     "react": "17.0.2",
