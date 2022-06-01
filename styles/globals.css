@@ -16,23 +16,6 @@ a {
 
 }
 
-.svg-shadow {
-  position: block;
-  width: 48px;
-  height: 48px;
-}
-
-.svg-shadow::before {
-  content: " ";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  background: linear-gradient(180deg, #2FE4AB 0%, #B6EA5C 100%);
-  opacity: 0.3;
-  filter: blur(18px);
-  border-radius: 310px;
-}
-
 .block-image {
   display: flex;
   position: relative;

@@ -23,8 +23,6 @@ export const OurMission = () => {
           image={<CodeIcon />}
           heading="Open Source"
           subheading="The Obol Network will forever be open source and permissionless. The impact of distributed validators lies in their accessibility."
-          contentAlign="start"
-          link="https://obol.tech"
         />
         <Card
           image={<PublicGoodIcon />}
