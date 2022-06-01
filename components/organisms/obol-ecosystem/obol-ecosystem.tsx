@@ -322,7 +322,7 @@ export const ObolEcosystem = () => {
   const AccordionSection = () => (
     <Accordion.Root type="single" defaultValue={`tab-0`} collapsible>
       {tabs.map((item, idx) => (
-        <Accordion.Item key={`accordion-item-tab-${idx}`} value={`tab-${idx}`}>
+        <Accordion.Item key={`accordion-item-tab-${idx.toString()}`} value={`tab-${idx.toString()}`}>
           <Accordion.Trigger>{item.tab}</Accordion.Trigger>
           <Accordion.Content>
             {item.component === "TeamMemberCard" ? (
@@ -340,13 +340,13 @@ export const ObolEcosystem = () => {
     <Tabs.Tabs defaultValue={tabs[0].tab}>
       <Tabs.TabsList aria-label="Obol Ecosystem">
         {tabs.map((item, idx) => (
-          <Tabs.TabsTrigger key={`tab-trigger-${idx}`} value={item.tab}>
+          <Tabs.TabsTrigger key={`tab-trigger-${idx.toString()}`} value={item.tab}>
             {item.tab}
           </Tabs.TabsTrigger>
         ))}
       </Tabs.TabsList>
       {tabs.map((item, idx) => (
-        <Tabs.TabsContent key={`tabs-content-${idx}`} value={item.tab}>
+        <Tabs.TabsContent key={`tabs-content-${idx.toString()}`} value={item.tab}>
           <Box
             css={{
               display: "flex",

@@ -1,3 +1,2 @@
-export * from './card/Card';
-export * from './navbar/Navbar';
-export * from './cta-buttons/CtaButtons'
+export * from './navbar/navbar';
+export * from './cta-buttons/cta-buttons'
