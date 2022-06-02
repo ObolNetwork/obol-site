@@ -10,8 +10,6 @@ import BgImageLeft from "../../../public/backgrounds/cta-bg-left.svg";
 import { Section } from "../../atoms";
 
 export const Cta = (): JSX.Element => {
-  const screenDownSm = useMediaQuery(MediaQueryKeys.sm);
-
   const Content = () => (
     <Container
       alignItems="start"
@@ -31,31 +29,28 @@ export const Cta = (): JSX.Element => {
   );
   return (
     <>
-      {screenDownSm ? (
-        <Section
-          css={{
-            backgroundColor: "$bg01",
-            background: `url(${BgImage.src}) 40px bottom no-repeat`,
-            "@sm": {
-              p: "40px",
-            },
-          }}
-        >
-          <Content />
-        </Section>
-      ) : (
-        <Section
-          css={{
-            backgroundColor: "$bg01",
-            background: `url(${BgImage.src}) right bottom no-repeat, url(${BgImageLeft.src}) left top no-repeat`,
-            "@sm": {
-              p: "40px",
-            },
-          }}
-        >
-          <Content />
-        </Section>
-      )}
+      <Section
+        css={{
+          backgroundColor: "$bg01",
+          background: `url(${BgImage.src}) 40px bottom no-repeat`,
+          "@bp2": {
+            display: "none",
+          },
+        }}
+      >
+        <Content />
+      </Section>
+
+      <Section
+        css={{
+          "@sm": { display: "none" },
+          backgroundColor: "$bg01",
+          background: `url(${BgImage.src}) right bottom no-repeat, url(${BgImageLeft.src}) left top no-repeat`,
+          p: "40px",
+        }}
+      >
+        <Content />
+      </Section>
     </>
   );
 };

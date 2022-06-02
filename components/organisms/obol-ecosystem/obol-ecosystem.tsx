@@ -8,7 +8,6 @@ import {
   EcosystemTabsProps,
 } from "@obolnetwork/obol-ui";
 import { Section } from "../../atoms";
-import { MediaQueryKeys, useMediaQuery } from "../../utils/hooks";
 
 const tabs: EcosystemTabsProps[] = [
   {
@@ -277,8 +276,6 @@ const tabs: EcosystemTabsProps[] = [
 ];
 
 export const ObolEcosystem = () => {
-  const screenDownSm = useMediaQuery(MediaQueryKeys.sm);
-
   const TeamMemberCardContent = (props: any) => (
     <Box
       css={{
@@ -320,68 +317,88 @@ export const ObolEcosystem = () => {
   );
 
   const AccordionSection = () => (
-    <Accordion.Root type="single" defaultValue={`tab-0`} collapsible>
-      {tabs.map((item, idx) => (
-        <Accordion.Item key={`accordion-item-tab-${idx.toString()}`} value={`tab-${idx.toString()}`}>
-          <Accordion.Trigger>{item.tab}</Accordion.Trigger>
-          <Accordion.Content>
-            {item.component === "TeamMemberCard" ? (
-              <TeamMemberCardContent {...item} />
-            ) : (
-              <LogoCardContent {...item} />
-            )}
-          </Accordion.Content>
-        </Accordion.Item>
-      ))}
-    </Accordion.Root>
+    <Box css={{ "@bp2": { display: "none" } }}>
+      <Accordion.Root type="single" defaultValue={`tab-0`} collapsible>
+        {tabs.map((item, idx) => (
+          <Accordion.Item
+            key={`accordion-item-tab-${idx.toString()}`}
+            value={`tab-${idx.toString()}`}
+          >
+            <Accordion.Trigger>{item.tab}</Accordion.Trigger>
+            <Accordion.Content>
+              {item.component === "TeamMemberCard" ? (
+                <TeamMemberCardContent {...item} />
+              ) : (
+                <LogoCardContent {...item} />
+              )}
+            </Accordion.Content>
+          </Accordion.Item>
+        ))}
+      </Accordion.Root>
+    </Box>
   );
 
   const TabsSection = () => (
-    <Tabs.Tabs defaultValue={tabs[0].tab}>
-      <Tabs.TabsList aria-label="Obol Ecosystem">
+    <Box css={{ "@sm": { display: "none" } }}>
+      <Tabs.Tabs defaultValue={tabs[0].tab}>
+        <Tabs.TabsList aria-label="Obol Ecosystem">
+          {tabs.map((item, idx) => (
+            <Tabs.TabsTrigger
+              key={`tab-trigger-${idx.toString()}`}
+              value={item.tab}
+            >
+              {item.tab}
+            </Tabs.TabsTrigger>
+          ))}
+        </Tabs.TabsList>
         {tabs.map((item, idx) => (
-          <Tabs.TabsTrigger key={`tab-trigger-${idx.toString()}`} value={item.tab}>
-            {item.tab}
-          </Tabs.TabsTrigger>
-        ))}
-      </Tabs.TabsList>
-      {tabs.map((item, idx) => (
-        <Tabs.TabsContent key={`tabs-content-${idx.toString()}`} value={item.tab}>
-          <Box
-            css={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "$xl",
-              pt: "$lg",
-            }}
+          <Tabs.TabsContent
+            key={`tabs-content-${idx.toString()}`}
+            value={item.tab}
           >
-            {item?.items?.map((card, idxCard) => (
-              <>
-                {item.component === "TeamMemberCard" ? (
-                  <TeamMemberCard
-                    key={`tabs-team-member-card-${card.heading}-${idxCard}`}
-                    {...card}
-                  />
-                ) : (
-                  <LogoCard
-                    key={`tabs-logo-card-${card.heading}-${idxCard}`}
-                    width="288px"
-                    height="120px"
-                    {...card}
-                  />
-                )}
-              </>
-            ))}
-          </Box>
-        </Tabs.TabsContent>
-      ))}
-    </Tabs.Tabs>
+            <Box
+              css={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "$xl",
+                pt: "$lg",
+              }}
+            >
+              {item?.items?.map((card, idxCard) => (
+                <>
+                  {item.component === "TeamMemberCard" ? (
+                    <TeamMemberCard
+                      key={`tabs-team-member-card-${card.heading}-${idxCard}`}
+                      {...card}
+                    />
+                  ) : (
+                    <LogoCard
+                      key={`tabs-logo-card-${card.heading}-${idxCard}`}
+                      width="288px"
+                      height="120px"
+                      {...card}
+                    />
+                  )}
+                </>
+              ))}
+            </Box>
+          </Tabs.TabsContent>
+        ))}
+      </Tabs.Tabs>
+    </Box>
   );
 
   return (
-    <Section css={{ display: "flex", flexDirection: "column", py: "calc($3xl * 2)", gap:"$2xl" }}>
+    <Section
+      css={{
+        display: "flex",
+        flexDirection: "column",
+        py: "calc($3xl * 2)",
+        gap: "$2xl",
+      }}
+    >
       <Text variant="h3">Obol Ecosystem</Text>
-      {screenDownSm ? <AccordionSection /> : <TabsSection />}
+      <AccordionSection /> <TabsSection />
     </Section>
   );
 };

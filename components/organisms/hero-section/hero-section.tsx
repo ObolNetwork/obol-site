@@ -33,6 +33,11 @@ export const HeroSection = (): JSX.Element => {
           distributed validators
         </>
       }
+      css={{
+        "@bp2": {
+          mb: "100px",
+        },
+      }}
     >
       <Button>Read the Docs</Button>
     </HeroSectionComponent>
