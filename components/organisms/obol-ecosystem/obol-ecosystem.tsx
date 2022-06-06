@@ -278,11 +278,20 @@ const tabs: EcosystemTabsProps[] = [
 export const ObolEcosystem = () => {
   const TeamMemberCardContent = (props: any) => (
     <Box
+      className="team-member-card-content"
       css={{
         display: "flex",
         flexDirection: "column",
         gap: "$sm",
         pt: "$sm",
+        "@sm": {
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+        },
+        "@xs": {
+          display: "grid",
+          gridTemplateColumns: "1fr",
+        },
       }}
     >
       {props?.items?.map((card: any, idxCard: number) => (
@@ -341,7 +350,10 @@ export const ObolEcosystem = () => {
   const TabsSection = () => (
     <Box css={{ "@sm": { display: "none" } }}>
       <Tabs.Tabs defaultValue={tabs[0].tab}>
-        <Tabs.TabsList aria-label="Obol Ecosystem">
+        <Tabs.TabsList
+          aria-label="Obol Ecosystem"
+          css={{ "@md": { gap: "$xs" } }}
+        >
           {tabs.map((item, idx) => (
             <Tabs.TabsTrigger
               key={`tab-trigger-${idx.toString()}`}

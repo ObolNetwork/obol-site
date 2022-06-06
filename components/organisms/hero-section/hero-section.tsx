@@ -37,6 +37,11 @@ export const HeroSection = (): JSX.Element => {
         "@bp2": {
           mb: "100px",
         },
+        "@md": {
+          "& #heading-text": {
+            fontSize: "$10",
+          },
+        },
       }}
     >
       <Button>Read the Docs</Button>

@@ -11,6 +11,7 @@ import { DistributeYourValidators } from "../components/organisms/distribute-you
 import { Cta } from "../components/organisms/cta/cta";
 import { Footer } from "../components/organisms/footer/footer";
 import { ObolEcosystem } from "../components/organisms/obol-ecosystem/obol-ecosystem";
+import { RoadMap } from "../components/organisms/roadmap/roadmap";
 
 const Home: NextPage = () => {
   return (
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
       </Box>
       <Box css={{ "@sm": { mt: "56px" } }} />
       <DistributeYourValidators />
+      <RoadMap />
       <ObolEcosystem />
       <Cta />
       <Footer />
