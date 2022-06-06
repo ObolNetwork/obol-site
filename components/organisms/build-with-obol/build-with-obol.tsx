@@ -9,10 +9,10 @@ import {
 
 export const BuildWithObol = () => {
   return (
-    <Container>
+    <Container css={{ width: "-webkit-fill-available" }}>
       <Text variant="h3">Build with Obol</Text>
 
-      <Container layout="row" ghost fullWidth>
+      <Container layout="row" ghost>
         <Card
           image={<CreateIcon />}
           heading="Create"
@@ -31,18 +31,23 @@ export const BuildWithObol = () => {
         />
       </Container>
       <Text variant="h4">Use cases</Text>
-      <Container layout="row" ghost fullWidth>
+      <Container
+        ghost
+        css={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          "@sm": {
+            gridTemplateColumns: "1fr",
+          },
+        }}
+        fullWidth
+      >
         <Card
           imageWidth="195px"
           imageHeight="116px"
           image="/assets/build-with-obol/use-case1.svg"
           heading="Exchanges"
           variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
         />
 
         <Card
@@ -51,11 +56,6 @@ export const BuildWithObol = () => {
           image="/assets/build-with-obol/use-case2.svg"
           heading="Home Validator"
           variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
         />
         <Card
           imageWidth="195px"
@@ -63,25 +63,13 @@ export const BuildWithObol = () => {
           image="/assets/build-with-obol/use-case3.svg"
           heading="Custodians"
           variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
         />
-      </Container>
-      <Container layout="row" ghost fullWidth>
         <Card
           imageWidth="195px"
           imageHeight="116px"
           image="/assets/build-with-obol/use-case4.svg"
           heading="DeFi Vaults"
           variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
         />
 
         <Card
@@ -102,11 +90,6 @@ export const BuildWithObol = () => {
           image="/assets/build-with-obol/use-case6.svg"
           heading="Liquid Staking"
           variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
         />
       </Container>
     </Container>
