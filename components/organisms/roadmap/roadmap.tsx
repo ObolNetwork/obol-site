@@ -1,7 +1,20 @@
 import * as React from "react";
-import { Box, Button, Container, Text } from "@obolnetwork/obol-ui";
+import {
+  Box,
+  Button,
+  Container,
+  PlanetBlue,
+  PlanetGreen,
+  PlanetGrey,
+  PlanetMagenta,
+  PlanetOrange,
+  styled,
+  Text,
+  useMediaQuery,
+} from "@obolnetwork/obol-ui";
 import { Tooltip } from "react-svg-tooltip";
 import Stars from "../../../public/backgrounds/stars.svg";
+import { MediaQueryKeys } from "@obolnetwork/obol-ui";
 const Planets = () => {
   const planetGrey = React.createRef<any>();
   const planetBlue = React.createRef<any>();
@@ -600,28 +613,144 @@ const Planets = () => {
   );
 };
 
-export const RoadMap = () => (
-  <Box
-    css={{
-      py: "$5xl",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      background: `url(${Stars.src})`    
-    }}
-  >
-    <Container ghost css={{ width: "-webkit-fill-available", gap: "$2xl" }}>
-      <Text variant="h3">Roadmap</Text>
-
-      <Planets />
-      <Box css={{ display: "flex", gap: "$sm" }}>
-        <Button as="a" variant="nav">
-          Docs
-        </Button>
-        <Button as="a" variant="nav">
-          Github
-        </Button>
+const roadmapItems = [
+  {
+    planet: <PlanetGrey />,
+    date: "Q4 2021",
+    title: "Devnets",
+    body: "Enable a group of distinct machines to validate together. Basic form of DKG can be completed.",
+  },
+  {
+    planet: <PlanetBlue />,
+    date: "Q1 2022",
+    title: "Public Testnet 1 & Attack Net",
+    body: `Engage Obol Community.
+    Facilitate self-service deployment of nodes.
+    Break charon in multiple ways.
+    Improve DoS resistance.`,
+  },
+  {
+    planet: <PlanetOrange />,
+    date: "Q3 2022",
+    title: "Public Testnet 2 & Red/Blue Net",
+    body: `Distributed Validator returns competetive.
+    Run an unreasonably large percentage of a test network to see the network performance at scale if a majority of validators moved to DV architectures.
+    Charon nodes cannot be DoS'd.
+    Demonstrate that fault tolerant validation is real, safe and cost competetive.`,
+  },
+  {
+    planet: <PlanetGreen />,
+    title: "Mainnet V1",
+    body: `Charon V1 will not deal with the performance of individual operators within a cluster. It will focus solely on maximising the distributed validators effectiveness. 
+  Any issues amongst participants in a cluster must be sorted outside of the core protocol. For this reason, all operators in a cluster should be known to one another.`,
+  },
+  {
+    planet: <PlanetMagenta />,
+    title: "Mainnet V2",
+    body: `Charon V2 will introduce performance rewards into clusters.
+  Enabling distributed validators to be run between operators that do not necessarily know or trust one another.
+  Operators will be required to post a bond to take part in a distributed validator cluster. While an operator is offline, they will not receive the rewards accruing to the operators, and if they significantly underperform, their bond can be slashed.`,
+  },
+];
+const Ul = styled("ul", {
+  m: 0,
+  paddingInlineStart: "$sm",
+  "& li": {
+    listStyleType: "circle",
+  },
+});
+const PlanetComponent = (props: any) => {
+  const [open, setOpen] = React.useState(false);
+  const body: string[] = props.body.split(".");
+  body.pop();
+  return (
+    <Box css={{ display: "flex", flexDirection: "column" }}>
+      <Box css={{ display: "flex", alignItems: "center", gap: "$xl" }}>
+        <Box onClick={() => setOpen(!open)}>{props.planet}</Box>
+        <Box
+          css={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          {props.date && <Text variant="body">{props.date}</Text>}
+          <Text variant="h5">{props.title}</Text>
+        </Box>
       </Box>
-    </Container>
+
+      <Box
+        css={{
+          display: open ? "block" : "none",
+          backgroundColor: "$bg03",
+          borderRadius: "$3",
+          p: "$sm",
+          width: "63%",
+          alignSelf: "flex-end",
+        }}
+      >
+        <Text variant="body" size="3">
+          <Ul>
+            {body.map((bullet: string, index: number) => (
+              <li key={`li-${index}`}>{bullet}</li>
+            ))}
+          </Ul>
+        </Text>
+      </Box>
+    </Box>
+  );
+};
+
+const RoadMapMobile = () => (
+  <Box css={{ display: "flex", flexDirection: "column", gap: "$xl" }}>
+    {roadmapItems.map((item) => (
+      <PlanetComponent key={`planet-${item.title}`} {...item} />
+    ))}
   </Box>
 );
+
+export const RoadMap = () => {
+  const screenDownSm = useMediaQuery(MediaQueryKeys.sm);
+  return (
+    <Box
+      css={{
+        py: "$5xl",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        background: `url(${Stars.src})`,
+        "@sm": {
+            py: "$xl",
+            px: "$xl",
+          },
+      }}
+    >
+      <Container
+        ghost
+        css={{
+          width: "-webkit-fill-available",
+          gap: "$2xl",
+        }}
+      >
+        <Text
+          variant="h3"
+          css={{
+            "@sm": {
+              alignSelf: "start",
+            },
+          }}
+        >
+          Roadmap
+        </Text>
+        {screenDownSm ? <RoadMapMobile /> : <Planets />}
+        <Box css={{ display: "flex", gap: "$sm" }}>
+          <Button as="a" variant="nav">
+            Docs
+          </Button>
+          <Button as="a" variant="nav">
+            Github
+          </Button>
+        </Box>
+      </Container>
+    </Box>
+  );
+};
