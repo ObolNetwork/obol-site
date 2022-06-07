@@ -7,6 +7,7 @@ import {
   TeamMemberCard,
   EcosystemTabsProps,
 } from "@obolnetwork/obol-ui";
+import { motion } from "framer-motion";
 import { Section } from "../../atoms";
 
 const tabs: EcosystemTabsProps[] = [
@@ -295,10 +296,14 @@ export const ObolEcosystem = () => {
       }}
     >
       {props?.items?.map((card: any, idxCard: number) => (
-        <TeamMemberCard
+        <motion.div
           key={`team-member-card-${card.heading}-${idxCard}`}
-          {...card}
-        />
+          initial={{ y: 500, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: "spring", duration: 0.8 }}
+        >
+          <TeamMemberCard {...card} />
+        </motion.div>
       ))}
     </Box>
   );

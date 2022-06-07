@@ -13,6 +13,7 @@
   "dependencies": {
     "@obolnetwork/obol-ui": "~0.1.43",
     "@stitches/react": "^1.2.7",
+    "framer-motion": "^6.3.10",
     "next": "12.1.0",
     "next-compose-plugins": "^2.2.1",
     "react": "17.0.2",

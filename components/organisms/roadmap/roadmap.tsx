@@ -15,6 +15,7 @@ import {
 import { Tooltip } from "react-svg-tooltip";
 import Stars from "../../../public/backgrounds/stars.svg";
 import { MediaQueryKeys } from "@obolnetwork/obol-ui";
+import { AnimatePresence, motion } from "framer-motion";
 const Planets = () => {
   const planetGrey = React.createRef<any>();
   const planetBlue = React.createRef<any>();
@@ -495,6 +496,14 @@ const Ul = styled("ul", {
     listStyleType: "circle",
   },
 });
+
+const MotionBox = styled(motion.div, {
+  backgroundColor: "$bg03",
+  borderRadius: "$3",
+  p: "$sm",
+  width: "63%",
+  alignSelf: "flex-end",
+});
 const PlanetComponent = (props: any) => {
   const [open, setOpen] = React.useState(false);
   const body: string[] = props.body.split(".");
@@ -513,25 +522,24 @@ const PlanetComponent = (props: any) => {
           <Text variant="h5">{props.title}</Text>
         </Box>
       </Box>
-
-      <Box
-        css={{
-          display: open ? "block" : "none",
-          backgroundColor: "$bg03",
-          borderRadius: "$3",
-          p: "$sm",
-          width: "63%",
-          alignSelf: "flex-end",
-        }}
-      >
-        <Text variant="body" size="3">
-          <Ul>
-            {body.map((bullet: string, index: number) => (
-              <li key={`li-${index}`}>{bullet}</li>
-            ))}
-          </Ul>
-        </Text>
-      </Box>
+      <AnimatePresence>
+        {open && (
+          <MotionBox
+            key="modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Text variant="body" size="3">
+              <Ul>
+                {body.map((bullet: string, index: number) => (
+                  <li key={`li-${index}`}>{bullet}</li>
+                ))}
+              </Ul>
+            </Text>
+          </MotionBox>
+        )}
+      </AnimatePresence>
     </Box>
   );
 };
@@ -550,6 +558,7 @@ export const RoadMap = () => {
     <Box
       css={{
         py: "$5xl",
+
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -563,7 +572,7 @@ export const RoadMap = () => {
       <Container
         ghost
         css={{
-          width: "-webkit-fill-available",
+          width: "stretch",
           gap: "$xxxs",
         }}
       >
@@ -578,18 +587,18 @@ export const RoadMap = () => {
           Roadmap
         </Text>
         {screenDownSm ? <RoadMapMobile /> : <Planets />}
-        <Box css={{ display: "flex", gap: "$sm", mt: "$4xl"}}>
+        <Box css={{ display: "flex", gap: "$sm", mt: "$4xl" }}>
           <Button
             as="a"
             variant="nav"
-            css={{ width: "188px", "@sm": { width: "-webkit-fill-available" } }}
+            css={{ width: "188px", "@sm": { width: "163px" } }}
           >
             Docs
           </Button>
           <Button
             as="a"
             variant="nav"
-            css={{ width: "188px", "@sm": { width: "-webkit-fill-available" } }}
+            css={{ width: "188px", "@sm": { width: "163px" } }}
           >
             Github
           </Button>
