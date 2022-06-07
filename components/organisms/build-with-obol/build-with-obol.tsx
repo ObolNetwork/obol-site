@@ -5,32 +5,35 @@ import {
   CreateIcon,
   TestIcon,
   RunIcon,
+  Box,
 } from "@obolnetwork/obol-ui";
 
 export const BuildWithObol = () => {
   return (
     <Container css={{ width: "-webkit-fill-available" }}>
       <Text variant="h3">Build with Obol</Text>
+      <Box>
+        <Container layout="row" ghost>
+          <Card
+            image={<CreateIcon />}
+            heading="Create"
+            subheading="Create distributed validator keys as a group with the Distributed Validator Launchpad."
+          />
 
-      <Container layout="row" ghost>
-        <Card
-          image={<CreateIcon />}
-          heading="Create"
-          subheading="Create distributed validator keys as a group with the Distributed Validator Launchpad."
-        />
-
-        <Card
-          image={<TestIcon />}
-          heading="Test"
-          subheading="Test your Obol Cluster on Obol's long-lived incentivised testnet."
-        />
-        <Card
-          image={<RunIcon />}
-          heading="Run"
-          subheading="Run distributed validators on the main network to benefit from fault tolerant staking."
-        />
-      </Container>
+          <Card
+            image={<TestIcon />}
+            heading="Test"
+            subheading="Test your Obol Cluster on Obol's long-lived incentivised testnet."
+          />
+          <Card
+            image={<RunIcon />}
+            heading="Run"
+            subheading="Run distributed validators on the main network to benefit from fault tolerant staking."
+          />
+        </Container>
+      </Box>
       <Text variant="h4">Use cases</Text>
+
       <Container
         ghost
         css={{
@@ -42,55 +45,65 @@ export const BuildWithObol = () => {
         }}
         fullWidth
       >
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case1.svg"
-          heading="Exchanges"
-          variant="image"
-        />
-
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case2.svg"
-          heading="Home Validator"
-          variant="image"
-        />
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case3.svg"
-          heading="Custodians"
-          variant="image"
-        />
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case4.svg"
-          heading="DeFi Vaults"
-          variant="image"
-        />
-
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case5.svg"
-          heading="DAO Treasuries"
-          variant="image"
-          css={{
-            "& div": {
-              right: "3%",
-            },
-          }}
-        />
-        <Card
-          imageWidth="195px"
-          imageHeight="116px"
-          image="/assets/build-with-obol/use-case6.svg"
-          heading="Liquid Staking"
-          variant="image"
-        />
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case1.svg"
+            heading="Exchanges"
+            variant="image"
+          />
+        </Box>
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case2.svg"
+            heading="Home Validator"
+            variant="image"
+          />
+        </Box>
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case3.svg"
+            heading="Custodians"
+            variant="image"
+          />
+        </Box>
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case4.svg"
+            heading="DeFi Vaults"
+            variant="image"
+          />
+        </Box>
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case5.svg"
+            heading="DAO Treasuries"
+            variant="image"
+            css={{
+              "& div": {
+                right: "3%",
+              },
+            }}
+          />
+        </Box>
+        <Box>
+          <Card
+            imageWidth="195px"
+            imageHeight="116px"
+            image="/assets/build-with-obol/use-case6.svg"
+            heading="Liquid Staking"
+            variant="image"
+          />
+        </Box>
       </Container>
     </Container>
   );

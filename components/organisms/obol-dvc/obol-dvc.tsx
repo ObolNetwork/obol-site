@@ -36,7 +36,12 @@ export const ObolDvc = () => {
             alignItems: "center",
           }}
         >
-          <Image src="/assets/obol-dvc/obol-dvc.svg" width={387} height={317} alt="obol dvc" />
+          <Image
+            src="/assets/obol-dvc/obol-dvc.svg"
+            width={387}
+            height={317}
+            alt="obol dvc"
+          />
         </Box>
         <Container css={{ gap: "$2xl" }} variant="textContent" ghost>
           <Text variant="h5">Obol Distributed Validator Cluster</Text>
@@ -61,32 +66,34 @@ export const ObolDvc = () => {
       <Text variant="h4">
         Advantages of an Obol Distributed Validator Cluster
       </Text>
-      <Container className="advantages-obol" layout="row" ghost>
-        <Card
-          image="/assets/advantages-obol/always-online.svg"
-          imageWidth="280px"
-          imageHeight="137px"
-          variant="image"
-          heading="Traditional Validator Node"
-          subheading="Current validators have a single point of failure. Only one validator client can be running and signing messages at any time. If two validators with the same key sign conflicting messages the validator will be slashed."
-        />
-        <Card
-          image="/assets/advantages-obol/key-security.svg"
-          imageWidth="280px"
-          imageHeight="137px"
-          variant="image"
-          heading="Distributed Validator Cluster"
-          subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
-        />
-        <Card
-          image="/assets/advantages-obol/no-single-operator-failure.svg"
-          imageWidth="280px"
-          imageHeight="137px"
-          variant="image"
-          heading="Distributed Validator Cluster"
-          subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
-        />
-      </Container>
+      <Box>
+        <Container className="advantages-obol" layout="row" ghost>
+          <Card
+            image="/assets/advantages-obol/always-online.svg"
+            imageWidth="280px"
+            imageHeight="137px"
+            variant="image"
+            heading="Traditional Validator Node"
+            subheading="Current validators have a single point of failure. Only one validator client can be running and signing messages at any time. If two validators with the same key sign conflicting messages the validator will be slashed."
+          />
+          <Card
+            image="/assets/advantages-obol/key-security.svg"
+            imageWidth="280px"
+            imageHeight="137px"
+            variant="image"
+            heading="Distributed Validator Cluster"
+            subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
+          />
+          <Card
+            image="/assets/advantages-obol/no-single-operator-failure.svg"
+            imageWidth="280px"
+            imageHeight="137px"
+            variant="image"
+            heading="Distributed Validator Cluster"
+            subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
+          />
+        </Container>
+      </Box>
     </Container>
   );
 };
