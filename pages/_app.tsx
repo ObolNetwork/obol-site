@@ -7,7 +7,7 @@ const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: "#33474D",
+    backgroundColor: "$bg01",
     padding: 0,
     margin: 0,
     fontFamily: "DM Sans",
