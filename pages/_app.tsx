@@ -7,7 +7,7 @@ const globalStyles = globalCss({
   },
 
   body: {
-    background: "linear-gradient(180deg, #01181E 0%, #011014 62.96%)",
+    backgroundColor: "#33474D",
     padding: 0,
     margin: 0,
     fontFamily: "DM Sans",
