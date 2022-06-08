@@ -22,7 +22,7 @@ export const Cta = (): JSX.Element => {
       fullWidth
     >
       <Text variant={{ "@initial": "h2", "@sm": "h3" }}>
-        Joint the Ecosystem
+        Join the Ecosystem
       </Text>
       <CtaButtons />
     </Container>
