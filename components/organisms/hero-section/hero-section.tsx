@@ -10,7 +10,7 @@ export const HeroSection = (): JSX.Element => {
     <motion.div
       initial={{ y: 500, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", duration: 0.5 }}
+      transition={{ duration: 0.8 }}
     >
       <HeroSectionComponent
         heading="Building Distributed Validators for Ethereum"
