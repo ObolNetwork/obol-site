@@ -3,7 +3,6 @@ import {
   Text,
   HeroSection as HeroSectionComponent,
 } from "@obolnetwork/obol-ui";
-import { motion } from "framer-motion";
 
 export const HeroSection = (): JSX.Element => {
   return (
