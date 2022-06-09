@@ -8,7 +8,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, Put personal access token to be able to install our `@obolnetwork/obol-ui` package `.npmrc` file replace the `${NPM_TOKEN}` wit your token.
+
+```
+@obolnetwork:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=${NPM_TOKEN}
+```
+
+[Learn how to create your personal access token on github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+Second, run the development server:
 
 ```bash
 npm run dev

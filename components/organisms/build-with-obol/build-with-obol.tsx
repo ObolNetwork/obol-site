@@ -32,8 +32,8 @@ export const BuildWithObol = () => {
           />
         </Container>
       </Box>
-      <Text variant="h4">Use cases</Text>
-
+      {/* <Text variant="h4">Use cases</Text>
+      TODO: put back once we got the right info for this
       <Container
         ghost
         css={{
@@ -104,7 +104,7 @@ export const BuildWithObol = () => {
             variant="image"
           />
         </Box>
-      </Container>
+      </Container> */}
     </Container>
   );
 };
