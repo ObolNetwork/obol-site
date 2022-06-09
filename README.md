@@ -1,3 +1,9 @@
+![Obol Logo](https://obol.tech/obolnetwork.png)
+
+<h1 align="center">Obol Network Landing Page</h1>
+
+This repo intends to serve as an informational website about the Obol Network.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

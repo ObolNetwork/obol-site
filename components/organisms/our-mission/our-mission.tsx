@@ -33,7 +33,7 @@ export const OurMission = () => {
           <Card
             image={<TrustMinimisedIcon />}
             heading="Trust Minimised"
-            subheading="Obol is committed to using technology and cryptography to reduce the need to trust any single staking operator. Removing this trusts is a core pillar to keeping stake decentralized."
+            subheading="Obol is committed to using technology and cryptography to reduce the need to trust any single staking operator. Removing this trust is a core pillar to keep stake decentralized."
           />
         </Container>
       </Box>
