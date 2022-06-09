@@ -268,7 +268,7 @@ const tabs: EcosystemTabsProps[] = [
         image: "/assets/team/Edax.png",
         subheading: "Full Stack Software Engineer",
         links: [
-          { link: "https://twitter.com/f1lander", network: "twitter" },
+          { link: "https://twitter.com/f1miyamoto", network: "twitter" },
           { link: "https://github.com/f1lander", network: "github" },
         ],
       },
