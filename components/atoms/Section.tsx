@@ -1,15 +1,7 @@
-import { Box } from "@obolnetwork/obol-ui";
-import { CSS } from "@obolnetwork/obol-ui/dist/stitches.config";
+import { Box, styled } from "@obolnetwork/obol-ui";
 
-export const Section: React.FC<{ css?: CSS }> = ({ children, css }) => (
-  <Box
-    css={{
-      px: "calc($3xl * 2)",
-      backgroundColor: "$bg03",
-      "@sm": { px: "$xl", py: "$2xl" },
-      ...css,
-    }}
-  >
-    {children}
-  </Box>
-);
+export const Section = styled(Box, {
+  px: "calc($3xl * 2)",
+  backgroundColor: "$bg03",
+  "@sm": { px: "$xl", py: "$2xl" },
+});

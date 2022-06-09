@@ -248,7 +248,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Dhruv Bodani",
         image: "/assets/team/Dhruv.png",
-        subheading: "Full Stack Software Engineer",
+        subheading: "Software Engineer",
         links: [
           { link: "https://twitter.com/dhruvbodani", network: "twitter" },
           { link: "https://github.com/dB2510", network: "github" },
@@ -257,7 +257,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Abishek Kumar",
         image: "/assets/team/Abhishek.png",
-        subheading: "Full Stack Software Engineer",
+        subheading: "Software Engineer",
         links: [
           { link: "https://twitter.com/xenowits", network: "twitter" },
           { link: "https://github.com/xenowits", network: "github" },
@@ -266,7 +266,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Edax Uclés",
         image: "/assets/team/Edax.png",
-        subheading: "Full Stack Software Engineer",
+        subheading: "Software Engineer",
         links: [
           { link: "https://twitter.com/f1miyamoto", network: "twitter" },
           { link: "https://github.com/f1lander", network: "github" },
