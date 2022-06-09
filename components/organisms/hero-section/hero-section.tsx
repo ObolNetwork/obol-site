@@ -11,7 +11,7 @@ export const HeroSection = (): JSX.Element => {
       content={
         <>
           The Obol Network is an ecosystem for trust minimized staking that
-          allows people to{" "}
+          enables people to{" "}
           <Text css={{ display: "inline-block" }} color="create" glow>
             create
           </Text>

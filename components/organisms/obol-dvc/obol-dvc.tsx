@@ -16,16 +16,17 @@ export const ObolDvc = () => {
         variant="textContent"
         ghost
       >
-        <Text variant="h3">Obol Distributed Validator Cluster</Text>
+        <Text variant="h3">Distributed Validator Cluster</Text>
         <Text variant="body">
           The Obol Network is responsible for fostering the adoption of
-          multi-operator validation as a use case for distributed validator
-          technology.
+          multi-operator validation as a use case for Distributed Validator
+          Technology.
         </Text>
         <Text variant="body">
-          Obol Clusters are multi operator fault tolerant beacon node clusters
-          that enable a number of operators to fail and be repaired, without a
-          validator going offline.
+          Distributed Validator Clusters are multi-operator, fault-tolerant clusters
+          of servers running Ethereum Execution clients, Consensus clients, Distributed Validator clients, 
+          and Validator clients; that combined enable a subset of servers to fail and recover, without a
+          Distributed Validator running on this cluster going offline.
         </Text>
       </Container>
       <Container layout="row" variant="card">
@@ -44,17 +45,17 @@ export const ObolDvc = () => {
           />
         </Box>
         <Container css={{ gap: "$2xl" }} variant="textContent" ghost>
-          <Text variant="h5">Obol Distributed Validator Cluster</Text>
+          <Text variant="h5">Distributed Validator Cluster</Text>
           <Text variant="body">
-            {`Charon is Obol Network's distributed validator client and first step in enabling trustless validation.`}
+            <Link target="_blank" href="https://github.com/ObolNetwork/charon">Charon</Link> is Obol Network's Distributed Validator client and first step in enabling trust-minimised validation.
           </Text>
           <Text variant="body">
-            Charon conducts fault tolerant, high-availability validation,
-            enabling a group of people to collectively run a validator across
-            machines instead of on a single node.
+            Charon enables fault tolerant, high-availability validation,
+            empowering a group of people to collectively run a validator across multiple
+            machines instead of on a single one.
           </Text>
           <Text variant="body">
-            The more multi-operator clusters on mainnet the stronger Ethereum
+            The more multi-operator clusters on mainnet the more immutable and resilient to attack Ethereum
             will become.
           </Text>
           <Link target="_blank" href="https://docs.obol.tech/">
@@ -64,7 +65,7 @@ export const ObolDvc = () => {
         </Container>
       </Container>
       <Text variant="h4">
-        Advantages of an Obol Distributed Validator Cluster
+        Advantages of a Distributed Validator Cluster
       </Text>
       <Box>
         <Container className="advantages-obol" layout="row" ghost>
@@ -73,24 +74,24 @@ export const ObolDvc = () => {
             imageWidth="280px"
             imageHeight="137px"
             variant="image"
-            heading="Traditional Validator Node"
-            subheading="Current validators have a single point of failure. Only one validator client can be running and signing messages at any time. If two validators with the same key sign conflicting messages the validator will be slashed."
+            heading="Geographic Redundancy"
+            subheading="Existing validators have a single point of failure. Only one validator client instance can be online and signing messages at any time. If two validators with the same private key sign conflicting messages the validator will be slashed."
           />
           <Card
             image="/assets/advantages-obol/key-security.svg"
             imageWidth="280px"
             imageHeight="137px"
             variant="image"
-            heading="Distributed Validator Cluster"
-            subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
+            heading="Key Distribution"
+            subheading="Distributed Validator Clusters share one private key, no single node in the cluster has the full private key, and the full private key never exists in full anywhere. This makes validator key compromise more difficult for an attacker."
           />
           <Card
             image="/assets/advantages-obol/no-single-operator-failure.svg"
             imageWidth="280px"
             imageHeight="137px"
             variant="image"
-            heading="Distributed Validator Cluster"
-            subheading="Distributed Validator Nodes operate as a cluster through a distributed validator middleware client called Charon, which coordinates what every validator will sign, and reconstitutes the individual signatures into a signature for the DV."
+            heading="Fault Tolerance"
+            subheading="Distributed Validator Clusters require only a subset of nodes to be online to produce signatures. This allows for fault-tolerant validators to be built, and allows a Distributed Validator to remain online despite hardware failure."
           />
         </Container>
       </Box>

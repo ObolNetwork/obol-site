@@ -20,9 +20,9 @@ export const DistributeYourValidators = (): JSX.Element => {
         heading="Distribute your Validators"
         content={
           <>
-            Create an Obol Cluster with a group using the{" "}
+            Create a Distributed Validator Cluster with a group of Node Operators using the{" "}
             <Text css={{ display: "inline-block" }} color="create" glow>
-              distributed validator launchpad.
+              Distributed Validator Launchpad.
             </Text>
           </>
         }

@@ -453,13 +453,13 @@ const Planets = () => {
 const roadmapItems = [
   {
     planet: <PlanetGrey />,
-    date: "Q4 2021",
+    date: "Q1 2022",
     title: "Devnets",
     body: "Enable a group of distinct machines to validate together. Basic form of DKG can be completed.",
   },
   {
     planet: <PlanetBlue />,
-    date: "Q1 2022",
+    date: "Q2 2022",
     title: "Public Testnet 1 & Attack Net",
     body: `Engage Obol Community.
     Facilitate self-service deployment of nodes.
@@ -478,15 +478,15 @@ const roadmapItems = [
   {
     planet: <PlanetGreen />,
     title: "Mainnet V1",
-    body: `Charon V1 will not deal with the performance of individual operators within a cluster. It will focus solely on maximising the distributed validators effectiveness. 
+    body: `Charon V1 will not deal with the performance of individual operators within a cluster. It will focus solely on maximising the distributed validator cluster's effectiveness. 
   Any issues amongst participants in a cluster must be sorted outside of the core protocol. For this reason, all operators in a cluster should be known to one another.`,
   },
   {
     planet: <PlanetMagenta />,
     title: "Mainnet V2",
     body: `Charon V2 will introduce performance rewards into clusters.
-  Enabling distributed validators to be run between operators that do not necessarily know or trust one another.
-  Operators will be required to post a bond to take part in a distributed validator cluster. While an operator is offline, they will not receive the rewards accruing to the operators, and if they significantly underperform, their bond can be slashed.`,
+  Enabling Distributed Validators to be run between operators that do not necessarily know or trust one another.
+  Operators will be required to post a bond to take part in a Distributed Validator Cluster. While an operator is offline, they will not receive the rewards accruing to the operators, and if they significantly underperform, their bond can be slashed.`,
   },
 ];
 const Ul = styled("ul", {
