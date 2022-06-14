@@ -10,9 +10,9 @@ import {
 
 export const BuildWithObol = () => {
   return (
-    <Container css={{ width: "-webkit-fill-available" }}>
+    <Container>
       <Text variant="h3">Build with Obol</Text>
-      <Box>
+      <Box css={{ width: "stretch"}}>
         <Container layout="row" ghost>
           <Card
             image={<CreateIcon />}
