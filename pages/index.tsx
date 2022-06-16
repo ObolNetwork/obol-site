@@ -18,12 +18,38 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Obol - Building Distributed Validators for Ethereum</title>
-        <meta name="description" content="The Obol Network is an ecosystem for trust minimized staking that allows people to create, test, run & co-ordinate distributed validators" />
+        <meta
+          name="description"
+          content="The Obol Network is an ecosystem for trust minimized staking that allows people to create, test, run & co-ordinate distributed validators"
+        />
         <meta name="title" content="Obol" />
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:url" content="https://obol.dev" />           
-        <meta property="og:type" content="website" />           
-        <meta property="og:image" content="https://obol.dev/assets/og-image.png" />
+        <meta property="og:url" content="https://obol.dev" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://obol.dev/assets/og-image-v2.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="obol.dev" />
+        <meta property="twitter:url" content="https://obol.dev/" />
+        <meta
+          name="twitter:title"
+          content="Obol - Building Distributed Validators for Ethereum"
+        />
+        <meta
+          name="twitter:description"
+          content="The Obol Network is an ecosystem for trust minimized staking that allows people to create, test, run & co-ordinate distributed validators"
+        />
+        <meta
+          name="twitter:image"
+          content="https://obol.dev/assets/og-image-v2.png"
+        />
+        <meta name="twitter:site" content="@ObolNetwork" />
+        <meta name="twitter:creator" content="@ObolNetwork" />
       </Head>
       <Navbar />
       <Box
