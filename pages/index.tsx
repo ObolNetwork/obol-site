@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
         <meta property="og:url" content="https://obol.dev" />           
         <meta property="og:type" content="website" />           
-        <meta property="og:image" content="/assets/hexapod.svg" />
+        <meta property="og:image" content="https://obol.dev/assets/og-image.png" />
       </Head>
       <Navbar />
       <Box
