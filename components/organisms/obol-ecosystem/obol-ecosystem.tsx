@@ -10,188 +10,51 @@ import {
 import { motion } from "framer-motion";
 import { Section } from "../../atoms";
 
+import useSWR from "swr";
+
 const tabs: EcosystemTabsProps[] = [
-  {
-    tab: "Network Validators",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
-      },
-      {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
-  {
-    tab: "Network Contributors",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
-      },
-      {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
   {
     tab: "Backers",
     items: [
       {
         heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
+        image: "/assets/obol-ecosystem/backers/coinbase.svg",
       },
       {
         heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
+        image: "/assets/obol-ecosystem/backers/consensys.svg",
       },
       {
         heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
+        image: "/assets/obol-ecosystem/backers/blockdaemon.png",
       },
       {
         heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
+        image: "/assets/obol-ecosystem/backers/figment.png",
       },
       {
         heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
+        image: "/assets/obol-ecosystem/backers/lido.png",
       },
       {
         heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
+        image: "/assets/obol-ecosystem/backers/staking-facilities.png",
       },
       {
         heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
+        image: "/assets/obol-ecosystem/backers/stake-fish.png",
       },
       {
         heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
+        image: "/assets/obol-ecosystem/backers/chorus.png",
       },
       {
         heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
+        image: "/assets/obol-ecosystem/backers/rockx.png",
       },
       {
         heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
-  {
-    tab: "Advisors",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
-      },
-      {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
+        image: "/assets/obol-ecosystem/backers/skillz.png",
       },
     ],
   },
@@ -277,6 +140,12 @@ const tabs: EcosystemTabsProps[] = [
 ];
 
 export const ObolEcosystem = () => {
+  const fetcher = async (url: string) => {
+    const res = await fetch(url);
+    return await res.json();
+  };
+  const { data } = useSWR(["/api/get-images", "assets/backers"], fetcher);
+  console.log(data);
   const TeamMemberCardContent = (props: any) => (
     <Box
       className="team-member-card-content"
