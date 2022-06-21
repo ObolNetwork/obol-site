@@ -1,11 +1,11 @@
 import {
   Box,
-  LogoCard,
   Tabs,
   Text,
   Accordion,
   TeamMemberCard,
   EcosystemTabsProps,
+  LogoCard
 } from "@obolnetwork/obol-ui";
 import { motion } from "framer-motion";
 import { Section } from "../../atoms";
@@ -232,14 +232,18 @@ export const ObolEcosystem = () => {
         flexWrap: "wrap",
         gap: "$sm",
         pt: "$lg",
+        "@xs": {
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gap: "$sm",
+        }
       }}
     >
       {props?.items?.map((card: any, idxCard: number) => (
         <LogoCard
           className="logo-card"
           key={`logo-card-${card.heading}-${idxCard}`}
-          width="288px"
-          height="120px"
+         
           {...card}
         />
       ))}
@@ -307,8 +311,7 @@ export const ObolEcosystem = () => {
                   ) : (
                     <LogoCard
                       key={`tabs-logo-card-${card.heading}-${idxCard}`}
-                      width="288px"
-                      height="120px"
+                    
                       {...card}
                     />
                   )}

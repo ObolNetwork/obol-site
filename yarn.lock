@@ -374,10 +374,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@obolnetwork/obol-ui@~1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.5.tgz#9076e076dff5db18f573554fdaae9d52781c30e2"
-  integrity sha512-lGMs2Tj8BhQNhB+5nI+VEDjxkF+yhUaWRcCLyKhDkQ55ZtjH1ASvDiB4p0Ohmpav2h03TFkzYfZjemcgElk7zg==
+"@obolnetwork/obol-ui@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.6.tgz#a5e46ff9f166f9be376e726097963ad966cb9a62"
+  integrity sha512-xxPHMxXXuCPhY5/76tCQNnMaHWb4Gbe1DdOybk8Vw5MKubWRAeiZ4h53r7kIedxbBHW+V50mMUG71Nb6kpzR5g==
   dependencies:
     "@radix-ui/react-accordion" "^0.1.6"
     "@radix-ui/react-tabs" "^0.1.5"
