@@ -1,197 +1,113 @@
 import {
   Box,
-  LogoCard,
   Tabs,
   Text,
   Accordion,
   TeamMemberCard,
   EcosystemTabsProps,
+  LogoCard
 } from "@obolnetwork/obol-ui";
 import { motion } from "framer-motion";
 import { Section } from "../../atoms";
 
 const tabs: EcosystemTabsProps[] = [
   {
-    tab: "Network Validators",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
-      },
-      {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
-  {
-    tab: "Network Contributors",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
-      },
-      {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
-  {
     tab: "Backers",
     items: [
       {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
+        heading: "Advanced Blockchain",
+        image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
+        logoCardLink: "https://www.advancedblockchain.com/",
       },
       {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
+        heading: "Kiln",
+        image: "/assets/obol-ecosystem/backers/kiln.svg",
+        logoCardLink: "https://www.kiln.fi/",
       },
       {
-        heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
+        heading: "Archetype",
+        image: "/assets/obol-ecosystem/backers/archetype.png",
+        logoCardLink: "https://archetypecp.com/",
       },
       {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
-      },
-      {
-        heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
-      },
-      {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
-      },
-      {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
-      },
-    ],
-  },
-  {
-    tab: "Advisors",
-    items: [
-      {
-        heading: "Coinbase",
-        image: "/assets/obol-ecosystem/network-validators/coinbase.svg",
-      },
-      {
-        heading: "Consensys",
-        image: "/assets/obol-ecosystem/network-validators/consensys.svg",
+        heading: "Attestant",
+        image: "/assets/obol-ecosystem/backers/attestant.png",
+        logoCardLink: "https://www.attestant.io/",
       },
       {
         heading: "Blockdaemon",
-        image: "/assets/obol-ecosystem/network-validators/blockdaemon.svg",
-      },
-      {
-        heading: "Figment",
-        image: "/assets/obol-ecosystem/network-validators/figment.svg",
-      },
-      {
-        heading: "Lido",
-        image: "/assets/obol-ecosystem/network-validators/lido.svg",
-      },
-      {
-        heading: "Staking Facilities",
-        image:
-          "/assets/obol-ecosystem/network-validators/staking-facilities.svg",
-      },
-      {
-        heading: "Stake Fish",
-        image: "/assets/obol-ecosystem/network-validators/stake-fish.svg",
+        image: "/assets/obol-ecosystem/backers/blockdaemon.png",
+        logoCardLink: "https://blockdaemon.com/",
       },
       {
         heading: "Chorus",
-        image: "/assets/obol-ecosystem/network-validators/chorus.svg",
+        image: "/assets/obol-ecosystem/backers/chorus.png",
+        logoCardLink: "https://chorus.one/",
       },
       {
-        heading: "RockX",
-        image: "/assets/obol-ecosystem/network-validators/rockx.svg",
+        heading: "Coinbase Ventures",
+        image: "/assets/obol-ecosystem/backers/coinbase-ventures.png",
+        logoCardLink: "https://www.coinbase.com/ventures",
       },
       {
-        heading: "Skillz",
-        image: "/assets/obol-ecosystem/network-validators/skillz.svg",
+        heading: "Defi Alliance",
+        image: "/assets/obol-ecosystem/backers/defi-alliance.png",
+        logoCardLink: "https://alliance.xyz/",
+      },
+      {
+        heading: "Delphi",
+        image: "/assets/obol-ecosystem/backers/delphi.png",
+        logoCardLink: "https://delphidigital.io/",
+      },
+      {
+        heading: "Divergence",
+        image: "/assets/obol-ecosystem/backers/divergence.png",
+        logoCardLink: "https://www.div.vc/",
+      },
+      {
+        heading: "Ethereal Ventures",
+        image: "/assets/obol-ecosystem/backers/ethereal-ventures.png",
+        logoCardLink: "http://www.etherealventures.com/",
+      },
+      {
+        heading: "Everstake",
+        image: "/assets/obol-ecosystem/backers/everstake.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "Figment",
+        image: "/assets/obol-ecosystem/backers/figment.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "IOSG Ventures",
+        image: "/assets/obol-ecosystem/backers/iosg.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "The Lao",
+        image: "/assets/obol-ecosystem/backers/lao.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "Stable Node",
+        image: "/assets/obol-ecosystem/backers/stable-node.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "Stake Fish",
+        image: "/assets/obol-ecosystem/backers/stakefish.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "Staking Facilities",
+        image: "/assets/obol-ecosystem/backers/staking-facilities.png",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
+        heading: "Yield Ventures",
+        image: "/assets/obol-ecosystem/backers/yield-ventures.png",
+        logoCardLink: "https://www.kiln.fi/",
       },
     ],
   },
@@ -316,14 +232,18 @@ export const ObolEcosystem = () => {
         flexWrap: "wrap",
         gap: "$sm",
         pt: "$lg",
+        "@xs": {
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gap: "$sm",
+        }
       }}
     >
       {props?.items?.map((card: any, idxCard: number) => (
         <LogoCard
           className="logo-card"
           key={`logo-card-${card.heading}-${idxCard}`}
-          width="288px"
-          height="120px"
+         
           {...card}
         />
       ))}
@@ -391,8 +311,7 @@ export const ObolEcosystem = () => {
                   ) : (
                     <LogoCard
                       key={`tabs-logo-card-${card.heading}-${idxCard}`}
-                      width="288px"
-                      height="120px"
+                    
                       {...card}
                     />
                   )}
