@@ -10,7 +10,14 @@ export const CtaButtons = () => {
       >
         Join the Community
       </Button>
-      <Button color="secondary">Join the Team</Button>
+      <Button
+        color="secondary"
+        as="a"
+        target="_blank"
+        href="https://jobs.lever.co/obol-tech"
+      >
+        Join the Team
+      </Button>
     </Box>
   );
 };

@@ -44,7 +44,13 @@ export const HeroSection = (): JSX.Element => {
         },
       }}
     >
-      <Button>Read the Docs</Button>
+      <Button
+        as="a"
+        target="_blank"
+        href="https://docs.obol.tech/"
+      >
+        Read the Docs
+      </Button>
     </HeroSectionComponent>
   );
 };

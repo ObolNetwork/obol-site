@@ -17,7 +17,7 @@ export const HowDvsWork = () => {
           image="/assets/dvs-work/image1.svg"
           variant="image"
           heading="Traditional Validator Node"
-          subheading="Current validators have a single point of failure. Only one validator client can be running and signing messages at any time. If two validators with the same key sign conflicting messages the validator will be slashed."
+          subheading="Current validators have a single point of failure. Only one validator client can be running and signing messages at any time. If two validators with the same private key sign conflicting messages the validator will be slashed."
           link="https://docs.obol.tech/docs/int/key-concepts"
           contentAlign="start"
         />

@@ -40,7 +40,7 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://blockdaemon.com/",
       },
       {
-        heading: "Chorus",
+        heading: "Chorus One",
         image: "/assets/obol-ecosystem/backers/chorus.png",
         logoCardLink: "https://chorus.one/",
       },
@@ -72,42 +72,42 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Everstake",
         image: "/assets/obol-ecosystem/backers/everstake.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://everstake.one/",
       },
       {
         heading: "Figment",
         image: "/assets/obol-ecosystem/backers/figment.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://www.figment.io/",
       },
       {
         heading: "IOSG Ventures",
         image: "/assets/obol-ecosystem/backers/iosg.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://iosg.vc/",
       },
       {
         heading: "The Lao",
         image: "/assets/obol-ecosystem/backers/lao.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://www.thelao.io/",
       },
       {
         heading: "Stable Node",
         image: "/assets/obol-ecosystem/backers/stable-node.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://www.stablenode.xyz/",
       },
       {
         heading: "Stake Fish",
         image: "/assets/obol-ecosystem/backers/stakefish.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://stake.fish/en/",
       },
       {
         heading: "Staking Facilities",
         image: "/assets/obol-ecosystem/backers/staking-facilities.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://stakingfacilities.com/",
       },
       {
         heading: "Yield Ventures",
         image: "/assets/obol-ecosystem/backers/yield-ventures.png",
-        logoCardLink: "https://www.kiln.fi/",
+        logoCardLink: "https://www.yieldventures.io/",
       },
     ],
   },
@@ -234,7 +234,7 @@ export const ObolEcosystem = () => {
         pt: "$lg",
         "@xs": {
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateColumns: "1fr 1fr",
           gap: "$sm",
         }
       }}
