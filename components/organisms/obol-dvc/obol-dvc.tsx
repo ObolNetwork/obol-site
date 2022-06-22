@@ -47,7 +47,7 @@ export const ObolDvc = () => {
         <Container css={{ gap: "$2xl" }} variant="textContent" ghost>
           <Text variant="h5">Distributed Validator Cluster</Text>
           <Text variant="body">
-            <Link target="_blank" href="https://github.com/ObolNetwork/charon">Charon</Link> is Obol Network&apos;s Distributed Validator client and first step in enabling trust-minimised validation.
+            <Link target="_blank" href="https://github.com/ObolNetwork/charon" style={{display:"inline"}}>Charon</Link> is Obol Network&apos;s Distributed Validator client and first step in enabling trust-minimised validation.
           </Text>
           <Text variant="body">
             Charon enables fault tolerant, high-availability validation,
@@ -58,7 +58,7 @@ export const ObolDvc = () => {
             The more multi-operator clusters on mainnet the more immutable and resilient to attack Ethereum
             will become.
           </Text>
-          <Link target="_blank" href="https://docs.obol.tech/">
+          <Link target="_blank" href="https://docs.obol.tech/docs/dv/introducing-charon">
             Learn More about Charon
             <ArrowForward size="md" />
           </Link>

@@ -592,6 +592,8 @@ export const RoadMap = () => {
             as="a"
             variant="nav"
             css={{ width: "188px", "@sm": { width: "163px" } }}
+            target="_blank"
+            href="https://docs.obol.tech/"
           >
             Docs
           </Button>
@@ -599,6 +601,8 @@ export const RoadMap = () => {
             as="a"
             variant="nav"
             css={{ width: "188px", "@sm": { width: "163px" } }}
+            target="_blank"
+            href="https://github.com/ObolNetwork/"
           >
             Github
           </Button>

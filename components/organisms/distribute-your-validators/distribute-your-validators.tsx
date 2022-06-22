@@ -20,7 +20,8 @@ export const DistributeYourValidators = (): JSX.Element => {
         heading="Distribute your Validators"
         content={
           <>
-            Create a Distributed Validator Cluster with a group of Node Operators using the{" "}
+            Create a Distributed Validator Cluster with a group of Node
+            Operators using the{" "}
             <Text css={{ display: "inline-block" }} color="create" glow>
               Distributed Validator Launchpad.
             </Text>
@@ -31,7 +32,14 @@ export const DistributeYourValidators = (): JSX.Element => {
             "/assets/distributed-your-validators/distributed-your-validators.svg",
         }}
       >
-        <Button color="create">Learn More</Button>
+        <Button
+          color="create"
+          as="a"
+          target="_blank"
+          href="https://docs.obol.tech/docs/dvk/distributed_validator_launchpad"
+        >
+          Learn More
+        </Button>
       </TwoColumnSection>
     </Section>
   );
