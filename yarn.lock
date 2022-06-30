@@ -374,12 +374,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@obolnetwork/obol-ui@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.7.tgz#314f5778f33aa021c10ce1f82b52e91272ec3570"
-  integrity sha512-7hP6n5FelaZQb2WrBtEzrRBYXNdcA7Y0nOz+YS1qIa/SuDigzbKVNWds9i6oI4jrMN425YSnZTobi9mgs+5DoA==
+"@obolnetwork/obol-ui@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.8.tgz#d8b683d93e7c04a66644964a6143d8e8b45d2638"
+  integrity sha512-RdfEdouVKSLDVi9sjOmY+oXEGdp7DvFL59Jl6pJhJvZ8jkvBWF6jqpacTZ+AqzzLWwKTeebyKz6YL11VoXCXDQ==
   dependencies:
     "@radix-ui/react-accordion" "^0.1.6"
+    "@radix-ui/react-radio-group" "^0.1.5"
     "@radix-ui/react-tabs" "^0.1.5"
     "@radix-ui/react-toggle-group" "^0.1.5"
     "@radix-ui/react-tooltip" "^0.1.7"
@@ -479,6 +480,17 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-use-layout-effect" "0.1.0"
 
+"@radix-ui/react-label@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-label/-/react-label-0.1.5.tgz#12cd965bfc983e0148121d4c99fb8e27a917c45c"
+  integrity sha512-Au9+n4/DhvjR0IHhvZ1LPdx/OW+3CGDie30ZyCkbSHIuLp4/CV4oPPGBwJ1vY99Jog3zyQhsGww9MXj8O9Aj/A==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-compose-refs" "0.1.0"
+    "@radix-ui/react-context" "0.1.1"
+    "@radix-ui/react-id" "0.1.5"
+    "@radix-ui/react-primitive" "0.1.4"
+
 "@radix-ui/react-popper@0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-0.1.4.tgz#dfc055dcd7dfae6a2eff7a70d333141d15a5d029"
@@ -519,6 +531,23 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-slot" "0.1.2"
+
+"@radix-ui/react-radio-group@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-radio-group/-/react-radio-group-0.1.5.tgz#ca8a676123a18b44804aff10af46129e2c2b37c3"
+  integrity sha512-ybgHsmh/V2crKvK6xZ56dpPul7b+vyxcq7obWqHbr5W6Ca11wdm0E7lS0i/Y6pgfIKYOWIARmZYDpRMEeRCPOw==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.1.0"
+    "@radix-ui/react-compose-refs" "0.1.0"
+    "@radix-ui/react-context" "0.1.1"
+    "@radix-ui/react-label" "0.1.5"
+    "@radix-ui/react-presence" "0.1.2"
+    "@radix-ui/react-primitive" "0.1.4"
+    "@radix-ui/react-roving-focus" "0.1.5"
+    "@radix-ui/react-use-controllable-state" "0.1.0"
+    "@radix-ui/react-use-previous" "0.1.1"
+    "@radix-ui/react-use-size" "0.1.1"
 
 "@radix-ui/react-roving-focus@0.1.5":
   version "0.1.5"
