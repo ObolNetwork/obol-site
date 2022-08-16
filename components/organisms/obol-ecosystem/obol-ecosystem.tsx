@@ -5,7 +5,7 @@ import {
   Accordion,
   TeamMemberCard,
   EcosystemTabsProps,
-  LogoCard
+  LogoCard,
 } from "@obolnetwork/obol-ui";
 import { motion } from "framer-motion";
 import { Section } from "../../atoms";
@@ -188,6 +188,33 @@ const tabs: EcosystemTabsProps[] = [
           { link: "https://github.com/f1lander", network: "github" },
         ],
       },
+      {
+        heading: "Richard Malone",
+        image: "/assets/team/RichardMalone.png",
+        subheading: "Head of Business",
+        links: [
+          { link: "https://twitter.com/crypto_malone", network: "twitter" },
+          { link: "https://github.com/richardtmalone", network: "github" },
+        ],
+      },
+      {
+        heading: "Thomas Heremans",
+        image: "/assets/team/Thomas.png",
+        subheading: "Technical Project Manager",
+        links: [
+          { link: "https://twitter.com/cryp_thomas_", network: "twitter" },
+          { link: "https://github.com/thomasheremans", network: "github" },
+        ],
+      },
+      {
+        heading: "Hanan Nouman",
+        image: "/assets/team/Hanan.png",
+        subheading: "Junior Software Engineer",
+        links: [
+          { link: "https://twitter.com/hanannouman", network: "twitter" },
+          { link: "https://github.com/HananINouman", network: "github" },
+        ],
+      },
     ],
   },
 ];
@@ -236,14 +263,13 @@ export const ObolEcosystem = () => {
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "$sm",
-        }
+        },
       }}
     >
       {props?.items?.map((card: any, idxCard: number) => (
         <LogoCard
           className="logo-card"
           key={`logo-card-${card.heading}-${idxCard}`}
-         
           {...card}
         />
       ))}
@@ -311,7 +337,6 @@ export const ObolEcosystem = () => {
                   ) : (
                     <LogoCard
                       key={`tabs-logo-card-${card.heading}-${idxCard}`}
-                    
                       {...card}
                     />
                   )}
