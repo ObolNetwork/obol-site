@@ -200,7 +200,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Thomas Heremans",
         image: "/assets/team/Thomas.png",
-        subheading: "Technical Project Manage",
+        subheading: "Technical Project Manager",
         links: [
           { link: "https://twitter.com/cryp_thomas_", network: "twitter" },
           { link: "https://github.com/thomasheremans", network: "github" },
@@ -216,22 +216,18 @@ const tabs: EcosystemTabsProps[] = [
         ],
       },
       {
-        heading: "Brett Nouman",
+        heading: "Brett",
         image: "/assets/team/Brett.png",
         subheading: "Growth Lead",
         links: [
           { link: "https://twitter.com/ComposeBrett", network: "twitter" },
-          { link: "https://github.com/HananINouman", network: "github" },
         ],
       },
       {
-        heading: "Jenia Bark",
+        heading: "Jenia",
         image: "/assets/team/Jenia.png",
-        subheading: "Marketing Lead",
-        links: [
-          { link: "https://twitter.com/JeniaBark", network: "twitter" },
-          { link: "https://github.com/HananINouman", network: "github" },
-        ],
+        subheading: "Marketing Strategy Advisor",
+        links: [{ link: "https://twitter.com/JeniaBark", network: "twitter" }],
       },
     ],
   },
