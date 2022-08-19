@@ -216,7 +216,7 @@ const tabs: EcosystemTabsProps[] = [
         ],
       },
       {
-        heading: "Brett",
+        heading: "Brett Li",
         image: "/assets/team/Brett.png",
         subheading: "Growth Lead",
         links: [
@@ -224,7 +224,7 @@ const tabs: EcosystemTabsProps[] = [
         ],
       },
       {
-        heading: "Jenia",
+        heading: "Jenia Barkanova",
         image: "/assets/team/Jenia.png",
         subheading: "Marketing Strategy Advisor",
         links: [{ link: "https://twitter.com/JeniaBark", network: "twitter" }],
