@@ -522,22 +522,77 @@ const roadmapItems = [
         ></path>
       </svg>
     ),
-    date: "Q2 2022",
     title: "Devnets",
     body: "Enable a group of distinct machines to validate together. Basic form of DKG can be completed.",
   },
   {
     planet: <PlanetBlue />,
-    date: "Q3 2022",
-    title: "Public Testnet 1 & Attack Net",
+    planetComplementCollapse: (
+      <svg
+        width="22"
+        height="230"
+        viewBox="0 0 22 230"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="11.5"
+          y1="-1.31134e-07"
+          x2="11.5"
+          y2="230"
+          stroke="#16968E"
+          strokeWidth="3"
+        />
+        <path
+          d="M0 111C0 104.925 4.92487 100 11 100C17.0751 100 22 104.925 22 111C22 117.075 17.0751 122 11 122C4.92487 122 0 117.075 0 111Z"
+          fill="#16968E"
+        />
+        <path
+          d="M9.83366 112.634L7.64616 110.336L6.91699 111.102L9.83366 114.167L16.0837 107.6L15.3545 106.833L9.83366 112.634Z"
+          fill="#F4F3EC"
+          stroke="#F4F3EC"
+        />
+      </svg>
+    ),
+    planetComponentUncollapse: (
+      <svg
+        width="22"
+        height="230"
+        viewBox="0 0 22 230"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="11.5"
+          y1="76"
+          x2="11.5"
+          y2="200"
+          stroke="#16968E"
+          strokeWidth="3"
+        ></line>
+        <path
+          d="M0 111C0 104.925 4.92487 100 11 100C17.0751 100 22 104.925 22 111C22 117.075 17.0751 122 11 122C4.92487 122 0 117.075 0 111Z"
+          fill="#16968E"
+        ></path>
+        <path
+          d="M9.83366 112.634L7.64616 110.336L6.91699 111.102L9.83366 114.167L16.0837 107.6L15.3545 106.833L9.83366 112.634Z"
+          fill="#F4F3EC"
+          stroke="#F4F3EC"
+        ></path>
+      </svg>
+    ),
+    title: "Athena Public Testnet",
     body: `Engage Obol Community.
-    Facilitate self-service deployment of nodes.
-    Break charon in multiple ways.
-    Improve DoS resistance.`,
+    Facilitate self-service deployment of nodes.`,
   },
   {
     planet: <PlanetOrange />,
-    date: "Q4 2022",
+    title: "Bia Attack Net",
+    body: `Break charon in multiple ways.
+    Improve DoS resistance.`,
+  },
+  {
+    planet: <PlanetGreen />,
     title: "Public Testnet 2 & Red/Blue Net",
     body: `Distributed Validator returns competetive.
     Run an unreasonably large percentage of a test network to see the network performance at scale if a majority of validators moved to DV architectures.
@@ -545,17 +600,10 @@ const roadmapItems = [
     Demonstrate that fault tolerant validation is real, safe and cost competetive.`,
   },
   {
-    planet: <PlanetGreen />,
-    title: "Mainnet V1",
-    body: `Charon V1 will not deal with the performance of individual operators within a cluster. It will focus solely on maximising the distributed validator cluster's effectiveness. 
-  Any issues amongst participants in a cluster must be sorted outside of the core protocol. For this reason, all operators in a cluster should be known to one another.`,
-  },
-  {
     planet: <PlanetMagenta />,
-    title: "Mainnet V2",
+    title: "Mainnet",
     body: `Charon V2 will introduce performance rewards into clusters.
-  Enabling Distributed Validators to be run between operators that do not necessarily know or trust one another.
-  Operators will be required to post a bond to take part in a Distributed Validator Cluster. While an operator is offline, they will not receive the rewards accruing to the operators, and if they significantly underperform, their bond can be slashed.`,
+    Any issues amongst participants in a cluster must be sorted outside of the core protocol. For this reason, all operators in a cluster should be known to one another.`,
   },
 ];
 
