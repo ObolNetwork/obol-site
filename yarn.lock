@@ -374,6 +374,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+
 "@obolnetwork/obol-ui@^1.0.30":
   version "1.0.30"
   resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.30.tgz#9a270a70f68c01846eeb9a89a6f1eca66d60598e"

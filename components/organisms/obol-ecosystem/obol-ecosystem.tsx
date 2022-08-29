@@ -117,7 +117,7 @@ const tabs: EcosystemTabsProps[] = [
     items: [
       {
         heading: "Collin Myers",
-        subheading: "Co-Founder",
+        subheading: "Project Lead, Founder",
         links: [
           { link: "https://twitter.com/stakeeth", network: "twitter" },
           { link: "https://github.com/collinjmyers", network: "github" },
@@ -127,7 +127,7 @@ const tabs: EcosystemTabsProps[] = [
       },
       {
         heading: "Oisín Kyne",
-        subheading: "Co-Founder",
+        subheading: "Head of Technology, Co-Founder",
         links: [
           { link: "https://twitter.com/oisinkyne", network: "twitter" },
           { link: "https://github.com/oisinkyne", network: "github" },
@@ -182,7 +182,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Edax Uclés",
         image: "/assets/team/Edax.png",
-        subheading: "Software Engineer",
+        subheading: "Fullstack / UI Engineer",
         links: [
           { link: "https://twitter.com/f1miyamoto", network: "twitter" },
           { link: "https://github.com/f1lander", network: "github" },
