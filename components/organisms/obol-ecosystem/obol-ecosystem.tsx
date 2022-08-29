@@ -229,6 +229,12 @@ const tabs: EcosystemTabsProps[] = [
         subheading: "Marketing Strategy Advisor",
         links: [{ link: "https://twitter.com/JeniaBark", network: "twitter" }],
       },
+      {
+        heading: "Francis Hackett",
+        image: "/assets/team/Francis.png",
+        subheading: "Legal Counsel",
+        links: [{ link: "https://twitter.com/lexstake1", network: "twitter" }],
+      },
     ],
   },
 ];

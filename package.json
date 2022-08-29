@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@obolnetwork/obol-ui": "^1.0.15",
+    "@obolnetwork/obol-ui": "^1.0.30",
     "@stitches/react": "^1.2.7",
     "framer-motion": "^6.3.10",
     "next": "12.1.0",
