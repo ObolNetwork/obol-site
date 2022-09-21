@@ -6,7 +6,7 @@ const globalStyles = globalCss({
   html: {
     overflowX: "hidden",
   },
-  body: {
+  body: {    
     background: `url(${TopLeftBg.src}) left top no-repeat`,
     backgroundColor: "$bg01",
     padding: 0,
