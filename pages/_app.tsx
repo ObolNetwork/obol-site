@@ -1,9 +1,6 @@
 import { globalCss } from "@obolnetwork/obol-ui";
 import type { AppProps } from "next/app";
-import TopLeftBg from '../public/backgrounds/top-left-bg.svg';
-
-import TagManager from 'react-gtm-module';
-import { useEffect } from "react";
+import TopLeftBg from "../public/backgrounds/top-left-bg.svg";
 
 const globalStyles = globalCss({
   html: {
@@ -24,9 +21,6 @@ const globalStyles = globalCss({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
-  useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-NZ2HGMB' });
-}, []);
   return <Component {...pageProps} />;
 }
 
