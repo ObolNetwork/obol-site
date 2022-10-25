@@ -27,7 +27,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Archetype",
         image: "/assets/obol-ecosystem/backers/archetype.png",
-        logoCardLink: "https://archetypecp.com/",
+        logoCardLink: "https://www.archetype.fund/",
       },
       {
         heading: "Attestant",
