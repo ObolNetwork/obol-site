@@ -77,7 +77,7 @@ const tabs: EcosystemTabsProps[] = [
       {
         heading: "Figment",
         image: "/assets/obol-ecosystem/backers/figment.png",
-        logoCardLink: "https://www.figment.io/",
+        logoCardLink: "https://www.figmentcapital.io/",
       },
       {
         heading: "IOSG Ventures",
