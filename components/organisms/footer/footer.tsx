@@ -9,6 +9,36 @@ export const Footer = () => (
       "@sm": { px: "$xl", py: "$2xl" }
     }}
   >
-    <FooterSite />
+    <FooterSite links={[
+  {
+    title: "Docs",
+    links: [
+      {
+        title: "Intro to Obol",
+        link: "https://docs.obol.tech/docs/int/Overview",
+      },
+      { title: "Charon", link: "https://github.com/ObolNetwork/charon" },
+      {
+        title: "DV Launchpad",
+        link: "https://docs.obol.tech/docs/dvk/distributed_validator_launchpad",
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      { title: "Discord", link: "https://discord.com/invite/n6ebKsX46w" },
+      { title: "Twitter", link: "https://twitter.com/ObolNetwork" },
+    ],
+  },
+  {
+    title: "More",
+    links: [
+      { title: "Blog", link: "https://blog.obol.tech" },
+      { title: "Github", link: "https://github.com/ObolNetwork" },
+      { title: "Privacy Policy", link: "/privacy-policy" },
+    ],
+  },
+]} />
   </Box>
 );
