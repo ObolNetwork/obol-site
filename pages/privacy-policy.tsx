@@ -1,7 +1,21 @@
-import { Box, Navbar } from "@obolnetwork/obol-ui";
+import { Box, Navbar, styled } from "@obolnetwork/obol-ui";
 import { Footer } from "../components/organisms/footer/footer";
 import type { NextPage } from "next";
 import React from "react";
+
+const IFrame = styled("iframe", {
+  overflow: "hidden",
+  overflowX: "hidden",
+  overflowY: "hidden",
+  height: "100%",
+  width: "100%",
+  position: "absolute",
+  top: "0px",
+  left: "0px",
+  right: "0px",
+  bottom: "0px",
+  marginTop: "$xl"
+});
 
 const PrivacyPolicy: NextPage = () => {
   return (
@@ -20,15 +34,16 @@ const PrivacyPolicy: NextPage = () => {
           flexDirection: "column",
           alignItems: "center",
           gap: "56px",
+          pt: '$lg'
         }}
       >
-        <iframe
+        <IFrame
           frameBorder="0"
+          height="100%"
           width="100%"
-          height="1200px"
           src="https://app.termly.io/document/privacy-policy/cd8081f1-1bea-4c47-91f8-3ff495ab7aef"
           title="Termly Obol"
-        ></iframe>
+        ></IFrame>
       </Box>
       <Footer />
     </div>
