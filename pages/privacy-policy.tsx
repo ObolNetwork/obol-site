@@ -10,11 +10,10 @@ const IFrame = styled("iframe", {
   height: "100%",
   width: "100%",
   position: "absolute",
-  top: "0px",
+  top: "100px",
   left: "0px",
   right: "0px",
   bottom: "0px",
-  marginTop: "$xl"
 });
 
 const PrivacyPolicy: NextPage = () => {
