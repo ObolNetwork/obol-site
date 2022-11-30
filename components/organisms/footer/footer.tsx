@@ -35,8 +35,7 @@ export const Footer = () => (
     title: "More",
     links: [
       { title: "Blog", link: "https://blog.obol.tech" },
-      { title: "Github", link: "https://github.com/ObolNetwork" },
-      { title: "Privacy Policy", link: "/privacy-policy" },
+      { title: "Github", link: "https://github.com/ObolNetwork" },      
       { title: "Terms of Service", link: "https://docs.google.com/document/d/e/2PACX-1vSmfnfv1tE7377BHmZMOIGesk1dqOZUAe48AqnQuVR77RJAOpE4g6sB_98pdP9YiQ/pub" },
     ],
   },
