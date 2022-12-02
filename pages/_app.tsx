@@ -21,6 +21,7 @@ const globalStyles = globalCss({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
+  console.log("Test ENV VARS", process.env.CHAIN_ID, process.env.DEPOSIT_CONTRACT_ADDRESS);
   return <Component {...pageProps} />;
 }
 

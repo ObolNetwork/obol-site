@@ -1,0 +1,59 @@
+name: Sepolia Development Build and Deploy
+on:
+  push:
+    branches: [ dev ]
+    # paths-ignore:
+    #   - '.github/workflows/**'
+    #   - '**.md'
+env:
+  URL: sepolia.obol.tech
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: sepolia-dev
+      url: https://${{ env.URL }}
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+      - name: Set GitHub Actions as Commit Author
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          path: 'build'
+
+      - name: Build
+        run: |
+          cd build
+          yarn
+          export API_URL=https://api.obol.tech
+          export DEPOSIT_CONTRACT=0x6f22fFbC56eFF051aECF839396DD1eD9aD6BBA9D
+          export CHAIN_ID=11155111
+          yarn build          
+      
+      - name: Checkout Dev Target
+        uses: actions/checkout@v3
+        with:
+          repository: ObolNetwork/obol-site-sepolia
+          path: 'deploy'
+          token: ${{ secrets.PAT }}
+      
+      - name: Add .nojekyll file
+        run: |
+          touch ./out/.nojekyll
+          echo ${{ env.URL }} > CNAME
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: out
