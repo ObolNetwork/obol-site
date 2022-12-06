@@ -36,9 +36,9 @@ export const DistributeYourValidators = (): JSX.Element => {
           color="create"
           as="a"
           target="_blank"
-          href="https://docs.obol.tech/docs/dvk/distributed_validator_launchpad"
+          href="https://goerli.launchpad.obol.tech"
         >
-          Learn More
+          Launch on Goerli
         </Button>
       </TwoColumnSection>
     </Section>
