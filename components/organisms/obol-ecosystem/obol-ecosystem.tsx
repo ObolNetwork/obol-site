@@ -20,11 +20,6 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.advancedblockchain.com/",
       },
       {
-        heading: "Kiln",
-        image: "/assets/obol-ecosystem/backers/kiln.svg",
-        logoCardLink: "https://www.kiln.fi/",
-      },
-      {
         heading: "Archetype",
         image: "/assets/obol-ecosystem/backers/archetype.png",
         logoCardLink: "https://www.archetype.fund/",
@@ -38,6 +33,11 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Blockdaemon",
         image: "/assets/obol-ecosystem/backers/blockdaemon.png",
         logoCardLink: "https://blockdaemon.com/",
+      },
+      {
+        heading: "Blocktower ",
+        image: "/assets/obol-ecosystem/backers/blocktower.png",
+        logoCardLink: "https://blocktower.com/",
       },
       {
         heading: "Chorus One",
@@ -80,14 +80,44 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.figmentcapital.io/",
       },
       {
+        heading: "IEX",
+        image: "/assets/obol-ecosystem/backers/iex.png",
+        logoCardLink: "https://iex.io/",
+      },
+      {
         heading: "IOSG Ventures",
         image: "/assets/obol-ecosystem/backers/iosg.png",
         logoCardLink: "https://iosg.vc/",
       },
       {
+        heading: "Kiln",
+        image: "/assets/obol-ecosystem/backers/kiln.svg",
+        logoCardLink: "https://www.kiln.fi/",
+      },
+      {
         heading: "The Lao",
         image: "/assets/obol-ecosystem/backers/lao.png",
         logoCardLink: "https://www.thelao.io/",
+      },
+      {
+        heading: "Nascent",
+        image: "/assets/obol-ecosystem/backers/nascent.png",
+        logoCardLink: "https://nascent.xyz/",
+      },
+      {
+        heading: "Pantera Capital",
+        image: "/assets/obol-ecosystem/backers/pantera.png",
+        logoCardLink: "https://panteracapital.com/",
+      },
+      {
+        heading: "Placeholder",
+        image: "/assets/obol-ecosystem/backers/placeholder.png",
+        logoCardLink: "https://placeholder.vc/",
+      },
+      {
+        heading: "Spartan Group",
+        image: "/assets/obol-ecosystem/backers/spartan.png",
+        logoCardLink: "https://spartangroup.io/",
       },
       {
         heading: "Stable Node",
@@ -108,36 +138,6 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Yield Ventures",
         image: "/assets/obol-ecosystem/backers/yield-ventures.png",
         logoCardLink: "https://www.yieldventures.io/",
-      },
-      {
-        heading: "Pantera Capital",
-        image: "/assets/obol-ecosystem/backers/pantera.png",
-        logoCardLink: "https://panteracapital.com/",
-      },
-      {
-        heading: "Blocktower ",
-        image: "/assets/obol-ecosystem/backers/blocktower.png",
-        logoCardLink: "https://blocktower.com/",
-      },
-      {
-        heading: "Placeholder",
-        image: "/assets/obol-ecosystem/backers/placeholder.png",
-        logoCardLink: "https://placeholder.vc/",
-      },
-      {
-        heading: "Nascent",
-        image: "/assets/obol-ecosystem/backers/nascent.png",
-        logoCardLink: "https://nascent.xyz/",
-      },
-      {
-        heading: "Iex",
-        image: "/assets/obol-ecosystem/backers/iex.png",
-        logoCardLink: "https://iex.io/",
-      },
-      {
-        heading: "Spartan Group",
-        image: "/assets/obol-ecosystem/backers/spartan.png",
-        logoCardLink: "https://spartangroup.io/",
       },
     ],
   },
