@@ -15,19 +15,34 @@ const tabs: EcosystemTabsProps[] = [
     tab: "Backers",
     items: [
       {
-        heading: "Advanced Blockchain",
-        image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
-        logoCardLink: "https://www.advancedblockchain.com/",
-      },
-      {
-        heading: "Kiln",
-        image: "/assets/obol-ecosystem/backers/kiln.svg",
-        logoCardLink: "https://www.kiln.fi/",
+        heading: "Pantera Capital",
+        image: "/assets/obol-ecosystem/backers/pantera.png",
+        logoCardLink: "https://panteracapital.com/",
       },
       {
         heading: "Archetype",
         image: "/assets/obol-ecosystem/backers/archetype.png",
         logoCardLink: "https://www.archetype.fund/",
+      },
+      {
+        heading: "Advanced Blockchain",
+        image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
+        logoCardLink: "https://www.advancedblockchain.com/",
+      },
+      {
+        heading: "Coinbase Ventures",
+        image: "/assets/obol-ecosystem/backers/coinbase-ventures.png",
+        logoCardLink: "https://www.coinbase.com/ventures",
+      },
+      {
+        heading: "Ethereal Ventures",
+        image: "/assets/obol-ecosystem/backers/ethereal-ventures.png",
+        logoCardLink: "http://www.etherealventures.com/",
+      },
+      {
+        heading: "Kiln",
+        image: "/assets/obol-ecosystem/backers/kiln.svg",
+        logoCardLink: "https://www.kiln.fi/",
       },
       {
         heading: "Attestant",
@@ -44,11 +59,7 @@ const tabs: EcosystemTabsProps[] = [
         image: "/assets/obol-ecosystem/backers/chorus.png",
         logoCardLink: "https://chorus.one/",
       },
-      {
-        heading: "Coinbase Ventures",
-        image: "/assets/obol-ecosystem/backers/coinbase-ventures.png",
-        logoCardLink: "https://www.coinbase.com/ventures",
-      },
+
       {
         heading: "Defi Alliance",
         image: "/assets/obol-ecosystem/backers/defi-alliance.png",
@@ -64,11 +75,7 @@ const tabs: EcosystemTabsProps[] = [
         image: "/assets/obol-ecosystem/backers/divergence.png",
         logoCardLink: "https://www.div.vc/",
       },
-      {
-        heading: "Ethereal Ventures",
-        image: "/assets/obol-ecosystem/backers/ethereal-ventures.png",
-        logoCardLink: "http://www.etherealventures.com/",
-      },
+
       {
         heading: "Everstake",
         image: "/assets/obol-ecosystem/backers/everstake.png",
@@ -109,11 +116,7 @@ const tabs: EcosystemTabsProps[] = [
         image: "/assets/obol-ecosystem/backers/yield-ventures.png",
         logoCardLink: "https://www.yieldventures.io/",
       },
-      {
-        heading: "Pantera Capital",
-        image: "/assets/obol-ecosystem/backers/pantera.png",
-        logoCardLink: "https://panteracapital.com/",
-      },
+
       {
         heading: "Blocktower ",
         image: "/assets/obol-ecosystem/backers/blocktower.png",
