@@ -25,11 +25,6 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.archetype.fund/",
       },
       {
-        heading: "Advanced Blockchain",
-        image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
-        logoCardLink: "https://www.advancedblockchain.com/",
-      },
-      {
         heading: "Coinbase Ventures",
         image: "/assets/obol-ecosystem/backers/coinbase-ventures.png",
         logoCardLink: "https://www.coinbase.com/ventures",
@@ -39,6 +34,17 @@ const tabs: EcosystemTabsProps[] = [
         image: "/assets/obol-ecosystem/backers/ethereal-ventures.png",
         logoCardLink: "http://www.etherealventures.com/",
       },
+      {
+        heading: "Blocktower ",
+        image: "/assets/obol-ecosystem/backers/blocktower.png",
+        logoCardLink: "https://blocktower.com/",
+      },
+      {
+        heading: "Advanced Blockchain",
+        image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
+        logoCardLink: "https://www.advancedblockchain.com/",
+      },
+
       {
         heading: "Kiln",
         image: "/assets/obol-ecosystem/backers/kiln.svg",
@@ -115,12 +121,6 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Yield Ventures",
         image: "/assets/obol-ecosystem/backers/yield-ventures.png",
         logoCardLink: "https://www.yieldventures.io/",
-      },
-
-      {
-        heading: "Blocktower ",
-        image: "/assets/obol-ecosystem/backers/blocktower.png",
-        logoCardLink: "https://blocktower.com/",
       },
       {
         heading: "Placeholder",
