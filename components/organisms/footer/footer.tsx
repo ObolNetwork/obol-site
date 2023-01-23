@@ -17,10 +17,10 @@ export const Footer = () => (
         title: "Intro to Obol",
         link: "https://docs.obol.tech/docs/int/Overview",
       },
-      { title: "Charon", link: "https://github.com/ObolNetwork/charon" },
+      { title: "Charon", link: "https://docs.obol.tech/docs/charon/intro" },
       {
         title: "DV Launchpad",
-        link: "https://docs.obol.tech/docs/dvk/distributed_validator_launchpad",
+        link: "https://docs.obol.tech/docs/dvl/intro",
       },
     ],
   },
