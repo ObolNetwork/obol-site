@@ -292,6 +292,7 @@ const tabs: EcosystemTabsProps[] = [
         subheading: "Growth Lead",
         links: [
           { link: "https://twitter.com/ComposeBrett", network: "twitter" },
+          { link: "https://github.com/Composeus", network: "github" },
         ],
       },
       {
