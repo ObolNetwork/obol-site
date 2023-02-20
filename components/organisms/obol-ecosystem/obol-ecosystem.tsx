@@ -46,7 +46,7 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://blockscape.network/",
       },
       {
-        heading: "Blocktower ",
+        heading: "Blocktower",
         image: "/assets/obol-ecosystem/backers/blocktower.png",
         logoCardLink: "https://blocktower.com/",
       },
@@ -101,24 +101,9 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.figmentcapital.io/",
       },
       {
-        heading: "Iex",
-        image: "/assets/obol-ecosystem/backers/iex.png",
-        logoCardLink: "https://iex.io/",
-      },
-      {
         heading: "IOSG Ventures",
         image: "/assets/obol-ecosystem/backers/iosg.png",
         logoCardLink: "https://iosg.vc/",
-      },
-      {
-        heading: "Kiln",
-        image: "/assets/obol-ecosystem/backers/kiln.svg",
-        logoCardLink: "https://www.kiln.fi/",
-      },
-      {
-        heading: "Kukis Global",
-        image: "/assets/obol-ecosystem/backers/kukis-global.png",
-        logoCardLink: "https://www.kukis-global.com/",
       },
       {
         heading: "The Lao",
