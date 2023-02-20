@@ -16,6 +16,11 @@ const tabs: EcosystemTabsProps[] = [
     tab: "Backers",
     items: [
       {
+        heading: "a41",
+        image: "/assets/obol-ecosystem/backers/a41.png",
+        logoCardLink: "https://a41.io/",
+      },
+      {
         heading: "Advanced Blockchain",
         image: "/assets/obol-ecosystem/backers/advanced-blockchain.png",
         logoCardLink: "https://www.advancedblockchain.com/",
@@ -61,11 +66,6 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://cosmostation.io/",
       },
       {
-        heading: "DSRV",
-        image: "/assets/obol-ecosystem/backers/dsrv.svg",
-        logoCardLink: "https://dsrvlabs.com/",
-      },
-      {
         heading: "Defi Alliance",
         image: "/assets/obol-ecosystem/backers/defi-alliance.png",
         logoCardLink: "https://alliance.xyz/",
@@ -79,6 +79,11 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Divergence",
         image: "/assets/obol-ecosystem/backers/divergence.png",
         logoCardLink: "https://www.div.vc/",
+      },
+      {
+        heading: "DSRV",
+        image: "/assets/obol-ecosystem/backers/dsrv.svg",
+        logoCardLink: "https://dsrvlabs.com/",
       },
       {
         heading: "Ethereal Ventures",
@@ -96,14 +101,14 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.figmentcapital.io/",
       },
       {
-        heading: "IOSG Ventures",
-        image: "/assets/obol-ecosystem/backers/iosg.png",
-        logoCardLink: "https://iosg.vc/",
-      },
-      {
         heading: "Iex",
         image: "/assets/obol-ecosystem/backers/iex.png",
         logoCardLink: "https://iex.io/",
+      },
+      {
+        heading: "IOSG Ventures",
+        image: "/assets/obol-ecosystem/backers/iosg.png",
+        logoCardLink: "https://iosg.vc/",
       },
       {
         heading: "Kiln",
@@ -114,6 +119,11 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Kukis Global",
         image: "/assets/obol-ecosystem/backers/kukis-global.png",
         logoCardLink: "https://www.kukis-global.com/",
+      },
+      {
+        heading: "The Lao",
+        image: "/assets/obol-ecosystem/backers/lao.png",
+        logoCardLink: "https://www.thelao.io/",
       },
       {
         heading: "Nascent",
@@ -166,19 +176,9 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://swiss-staking.ch/",
       },
       {
-        heading: "The Lao",
-        image: "/assets/obol-ecosystem/backers/lao.png",
-        logoCardLink: "https://www.thelao.io/",
-      },
-      {
         heading: "Yield Ventures",
         image: "/assets/obol-ecosystem/backers/yield-ventures.png",
         logoCardLink: "https://www.yieldventures.io/",
-      },
-      {
-        heading: "a41",
-        image: "/assets/obol-ecosystem/backers/a41.png",
-        logoCardLink: "https://a41.io/",
       },
     ],
   },
