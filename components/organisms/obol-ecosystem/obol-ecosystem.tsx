@@ -17,7 +17,7 @@ const tabs: EcosystemTabsProps[] = [
     items: [
       {
         heading: "a41",
-        image: "/assets/obol-ecosystem/backers/a41.png",
+        image: "/assets/obol-ecosystem/backers/a41.svg",
         logoCardLink: "https://a41.io/",
       },
       {
