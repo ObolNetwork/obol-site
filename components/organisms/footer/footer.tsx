@@ -34,6 +34,7 @@ export const Footer = () => (
   {
     title: "More",
     links: [
+      { title: "Careers", link: "https://jobs.lever.co/obol-tech" },
       { title: "Blog", link: "https://blog.obol.tech" },
       { title: "Github", link: "https://github.com/ObolNetwork" },
       { title: "Privacy Policy", link: "/privacy-policy" },
