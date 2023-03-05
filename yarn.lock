@@ -374,16 +374,17 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@obolnetwork/obol-ui@^1.0.30":
-  version "1.0.30"
-  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.30.tgz#9a270a70f68c01846eeb9a89a6f1eca66d60598e"
-  integrity sha512-7DSth3yi5JxyfPqZq6zYGB5LKPJ7duTgCRzz8GRh/KtqQCHG02QClI5gHEdkqJTPg0lqmnvmQPj2qVJI83/xjQ==
+"@obolnetwork/obol-ui@^1.0.39":
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/@obolnetwork/obol-ui/-/obol-ui-1.0.39.tgz#22b892b6d311df2b1090e4317ae7ca2bd7c8b0fa"
+  integrity sha512-QDMkFKy1/JJhr6IQjLH0LEczu+Ins8cM58VyjPe7H0RyUEGCim/kXfczQDF9Kn0G/Qqsp8WCGXs7oiUBdSN+Sw==
   dependencies:
     "@radix-ui/react-accordion" "^0.1.6"
     "@radix-ui/react-checkbox" "^1.0.0"
     "@radix-ui/react-dialog" "^0.1.7"
     "@radix-ui/react-icons" "^1.1.1"
     "@radix-ui/react-radio-group" "^0.1.5"
+    "@radix-ui/react-switch" "^1.0.1"
     "@radix-ui/react-tabs" "^0.1.5"
     "@radix-ui/react-toggle-group" "^0.1.5"
     "@radix-ui/react-tooltip" "^0.1.7"
@@ -665,6 +666,14 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-slot" "1.0.0"
 
+"@radix-ui/react-primitive@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-1.0.1.tgz#c1ebcce283dd2f02e4fbefdaa49d1cb13dbc990a"
+  integrity sha512-fHbmislWVkZaIdeF6GZxF0A/NH/3BjrGIYj+Ae6eTmTCr7EB0RQAAVEiqsXK6p3/JcRqVSBQoceZroj30Jj3XA==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-slot" "1.0.1"
+
 "@radix-ui/react-radio-group@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-radio-group/-/react-radio-group-0.1.5.tgz#ca8a676123a18b44804aff10af46129e2c2b37c3"
@@ -712,6 +721,28 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.0"
+
+"@radix-ui/react-slot@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-1.0.1.tgz#e7868c669c974d649070e9ecbec0b367ee0b4d81"
+  integrity sha512-avutXAFL1ehGvAXtPquu0YK5oz6ctS474iM3vNGQIkswrVhdrS52e3uoMQBzZhNRAIE0jBnUyXWNmSjGHhCFcw==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-compose-refs" "1.0.0"
+
+"@radix-ui/react-switch@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-switch/-/react-switch-1.0.1.tgz#56665fa951a4190313be21fab70a90041bdbd191"
+  integrity sha512-tTxGluMtwrc5ffgAiOSMrYIx0r3vSTcgM4Vl8rqfpXcHt6ryB9B0OlFKUOiDpKASXlhvzfHf4Y0AYKJdpzjL8w==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "1.0.0"
+    "@radix-ui/react-compose-refs" "1.0.0"
+    "@radix-ui/react-context" "1.0.0"
+    "@radix-ui/react-primitive" "1.0.1"
+    "@radix-ui/react-use-controllable-state" "1.0.0"
+    "@radix-ui/react-use-previous" "1.0.0"
+    "@radix-ui/react-use-size" "1.0.0"
 
 "@radix-ui/react-tabs@^0.1.5":
   version "0.1.5"
@@ -1226,9 +1257,9 @@ callsites@^3.0.0:
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
 caniuse-lite@^1.0.30001283, caniuse-lite@^1.0.30001332:
-  version "1.0.30001344"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001344.tgz#8a1e7fdc4db9c2ec79a05e9fd68eb93a761888bb"
-  integrity sha512-0ZFjnlCaXNOAYcV7i+TtdKBp0L/3XEU2MF/x6Du1lrh+SRX4IfzIVL4HNJg5pB2PmFb8rszIGyOvsZnqqRoc2g==
+  version "1.0.30001460"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001460.tgz"
+  integrity sha512-Bud7abqjvEjipUkpLs4D7gR0l8hBYBHoa+tGtKJHvT2AYzLp1z7EmVkUT4ERpVUfca8S2HGIVs883D8pUH1ZzQ==
 
 chalk@^2.0.0:
   version "2.4.2"

@@ -6,9 +6,9 @@ import {
   TeamMemberCard,
   EcosystemTabsProps,
   LogoCard,
-  EcosystemCardProps,
 } from "@obolnetwork/obol-ui";
 import { motion } from "framer-motion";
+import React from "react";
 import { Section } from "../../atoms";
 
 const tabs: EcosystemTabsProps[] = [
@@ -312,7 +312,7 @@ const tabs: EcosystemTabsProps[] = [
 ];
 
 export const ObolEcosystem = () => {
-  const TeamMemberCardContent = (props: any) => (
+  const TeamMemberCardContent = (props: EcosystemTabsProps) => (
     <Box
       className="team-member-card-content"
       css={{
@@ -330,7 +330,7 @@ export const ObolEcosystem = () => {
         },
       }}
     >
-      {props?.items?.map((card: any, idxCard: number) => (
+      {props?.items?.map((card, idxCard: number) => (
         <motion.div
           key={`team-member-card-${card.heading}-${idxCard}`}
           initial={{ y: 500, opacity: 0 }}
@@ -343,7 +343,7 @@ export const ObolEcosystem = () => {
     </Box>
   );
 
-  const LogoCardContent = (props: any) => (
+  const LogoCardContent = (props: EcosystemTabsProps) => (
     <Box
       className="logo-card-content"
       css={{
@@ -412,6 +412,7 @@ export const ObolEcosystem = () => {
             value={item.tab}
           >
             <Box
+              key={`tabs-box-${idx.toString()}`}
               css={{
                 display: "flex",
                 flexWrap: "wrap",
@@ -420,7 +421,9 @@ export const ObolEcosystem = () => {
               }}
             >
               {item?.items?.map((card, idxCard) => (
-                <>
+                <React.Fragment
+                  key={`tabs-fragment-${card.heading}-${idxCard}`}
+                >
                   {item.component === "TeamMemberCard" ? (
                     <TeamMemberCard
                       key={`tabs-team-member-card-${card.heading}-${idxCard}`}
@@ -432,7 +435,7 @@ export const ObolEcosystem = () => {
                       {...card}
                     />
                   )}
-                </>
+                </React.Fragment>
               ))}
             </Box>
           </Tabs.TabsContent>
