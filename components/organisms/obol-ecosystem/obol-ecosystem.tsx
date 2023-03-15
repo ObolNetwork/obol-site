@@ -307,6 +307,21 @@ const tabs: EcosystemTabsProps[] = [
         subheading: "Head of People",
         links: [{ link: "https://twitter.com/nannisack", network: "twitter" }],
       },
+      {
+        heading: "Gianguido SoràView",
+        image: "/assets/team/Gsora.png",
+        subheading: "Senior Software Engineer",
+        links: [{ link: "https://github.com/gsora", network: "github" }],
+      },
+      {
+        heading: "Juan Gadea",
+        image: "/assets/team/Juan.png",
+        subheading: "Protocol Specialist",
+        links: [
+          { link: "https://twitter.com/JuanG_RS", network: "twitter" },
+          { link: "https://github.com/juan-rs", network: "github" },
+        ],
+      },
     ],
   },
 ];
