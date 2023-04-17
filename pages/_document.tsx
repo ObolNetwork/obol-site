@@ -1,9 +1,12 @@
+/* eslint-disable @next/next/google-font-preconnect */
 /* eslint-disable @next/next/no-sync-scripts */
 /* eslint-disable @next/next/next-script-for-ga */
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import { getCssText } from "@obolnetwork/obol-ui";
-
+import { getCssText, styled } from "@obolnetwork/obol-ui";
+const Body = styled("body", {
+  fontFamily: "'DM Sans', sans-serif",
+});
 export default class Document extends NextDocument {
   render() {
     return (
@@ -34,14 +37,21 @@ export default class Document extends NextDocument {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=optional"
             rel="stylesheet"
           />
+          <link
+            rel="preload"
+            href="https://fonts.gstatic.com/s/dmsans/v13/TKwU8NIMJ0bKS1l1-.otf"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
         </Head>
-        <body>
+        <Body>
           <Main />
           <NextScript />
-        </body>
+        </Body>
       </Html>
     );
   }
