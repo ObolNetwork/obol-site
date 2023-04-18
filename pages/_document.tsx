@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/google-font-display */
 /* eslint-disable @next/next/google-font-preconnect */
-/* eslint-disable @next/next/no-sync-scripts */
+/* eslint-disable @next/next/google-font-display */
 /* eslint-disable @next/next/next-script-for-ga */
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
