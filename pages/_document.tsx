@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/google-font-preconnect */
-/* eslint-disable @next/next/google-font-display */
 /* eslint-disable @next/next/next-script-for-ga */
+/* eslint-disable @next/next/google-font-display */
 import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+
 import { getCssText, styled } from "@obolnetwork/obol-ui";
+
 const Body = styled("body", {
   fontFamily: "'DM Sans', sans-serif",
 });
@@ -12,7 +14,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <script
+          <script        
             id="google-tag-manager"
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,7 +29,8 @@ export default class Document extends NextDocument {
             src="https://app.termly.io/embed.min.js"
             data-auto-block="on"
             data-website-uuid="01eadf2f-d1f3-4db1-bdce-a3cb1cd9f4d7"
-          ></script>
+            async
+          />
           <style
             id="obol"
             dangerouslySetInnerHTML={{
