@@ -308,7 +308,7 @@ const tabs: EcosystemTabsProps[] = [
         links: [{ link: "https://twitter.com/nannisack", network: "twitter" }],
       },
       {
-        heading: "Gianguido SoràView",
+        heading: "Gianguido Sorà",
         image: "/assets/team/Gsora.png",
         subheading: "Senior Software Engineer",
         links: [{ link: "https://github.com/gsora", network: "github" }],
