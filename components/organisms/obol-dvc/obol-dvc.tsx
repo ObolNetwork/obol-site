@@ -58,7 +58,7 @@ export const ObolDvc = () => {
             The more multi-operator clusters on mainnet the more immutable and resilient to attack Ethereum
             will become.
           </Text>
-          <Link target="_blank" href="https://docs.obol.tech/docs/dv/introducing-charon">
+          <Link target="_blank" href="https://docs.obol.tech/docs/charon/intro">
             Learn More about Charon
             <ArrowForward size="md" />
           </Link>
