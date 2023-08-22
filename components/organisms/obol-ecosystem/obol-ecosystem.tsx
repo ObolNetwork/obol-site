@@ -106,6 +106,11 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://iosg.vc/",
       },
       {
+        heading: "Kukis Global",
+        image: "/assets/obol-ecosystem/backers/kukis-global.png",
+        logoCardLink: "https://www.kukis-global.com/",
+      },
+      {
         heading: "The Lao",
         image: "/assets/obol-ecosystem/backers/lao.png",
         logoCardLink: "https://www.thelao.io/",
