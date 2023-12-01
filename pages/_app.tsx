@@ -26,9 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    // Check if the current page is not the blocked page
     if (router.pathname !== "/blocked") {
-      // Dynamically load the cookie banner script
       const script = document.createElement("script");
       script.src = "https://app.termly.io/embed.min.js";
       script.type = "text/javascript";
@@ -39,9 +37,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         "01eadf2f-d1f3-4db1-bdce-a3cb1cd9f4d7"
       );
 
+      script.integrity =
+        "eb05b794d3ff3828122578afacb94693563557be9036d4dc882d70ce63d17a1c";
+      script.crossOrigin = "anonymous";
+
       document.body.appendChild(script);
     }
-  }, [router.pathname]); // Only re-run the effect if the pathname changes
+  }, [router.pathname]);
 
   return <Component {...pageProps} />;
 }
