@@ -24,18 +24,18 @@ const Home: NextPage = () => {
         />
         <meta name="title" content="Obol" />
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:url" content="https://obol.dev" />
+        <meta property="og:url" content="https://obol.tech" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://obol.dev/assets/og-image-v2.png"
+          content="https://obol.tech/assets/og-image-v2.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="obol.dev" />
-        <meta property="twitter:url" content="https://obol.dev/" />
+        <meta property="twitter:domain" content="obol.tech" />
+        <meta property="twitter:url" content="https://obol.tech/" />
         <meta
           name="twitter:title"
           content="Obol - Building Distributed Validators for Ethereum"
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://obol.dev/assets/og-image-v2.png"
+          content="https://obol.tech/assets/og-image-v2.png"
         />
         <meta name="twitter:site" content="@ObolNetwork" />
         <meta name="twitter:creator" content="@ObolNetwork" />
