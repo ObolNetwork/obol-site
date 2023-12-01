@@ -14,7 +14,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <script        
+          <script
             id="google-tag-manager"
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,13 +23,6 @@ export default class Document extends NextDocument {
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
               })(window,document,'script','dataLayer','GTM-NZ2HGMB');`,
             }}
-          />          
-          <script
-            type="text/javascript"
-            src="https://app.termly.io/embed.min.js"
-            data-auto-block="on"
-            data-website-uuid="01eadf2f-d1f3-4db1-bdce-a3cb1cd9f4d7"
-            async
           />
           <style
             id="obol"

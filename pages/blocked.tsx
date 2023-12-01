@@ -69,7 +69,7 @@ const Blocked: NextPage = () => {
               color: "$textLight",
               fontSize: "32px",
               marginBottom: "16px",
-              px: "35%",
+              px: "30%",
               "@sm": {
                 px: "10%",
               },
@@ -77,7 +77,7 @@ const Blocked: NextPage = () => {
               lineHeight: "48px",
             }}
           >
-            This link is not available in certain geolocations.
+            This link is not currently available in certain geolocations
           </Text>
           <Text
             css={{
@@ -90,7 +90,7 @@ const Blocked: NextPage = () => {
               },
             }}
           >
-            You can still explore more about Obol visiting our Website
+            You can still learn more about Obol by visiting our website
           </Text>
           <Button as="a" href="https://obol.tech" css={{ alignSelf: "center" }}>
             Obol Website
