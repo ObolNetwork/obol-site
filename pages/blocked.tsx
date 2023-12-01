@@ -1,7 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
-/* eslint-disable @next/next/google-font-preconnect */
-/* eslint-disable @next/next/next-script-for-ga */
-/* eslint-disable @next/next/google-font-display */
 import type { NextPage } from "next";
 import { Button, Navbar, Box, Text } from "@obolnetwork/obol-ui";
 import Head from "next/head";
