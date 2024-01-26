@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Box, ChevronUpIcon } from "@obolnetwork/obol-ui";
+import { Box } from "@obolnetwork/obol-ui";
 import { Navbar } from "../components/molecules";
 import { HeroSection } from "../components/organisms/hero-section/hero-section";
 import { OurMission } from "../components/organisms/our-mission/our-mission";
@@ -12,38 +12,9 @@ import { Cta } from "../components/organisms/cta/cta";
 import { Footer } from "../components/organisms/footer/footer";
 import { ObolEcosystem } from "../components/organisms/obol-ecosystem/obol-ecosystem";
 import { RoadMap } from "../components/organisms/roadmap/roadmap";
-import { useState, useEffect } from "react";
+import { ScrollToTop } from "../components/atoms/ScrollToTop";
 
 const Home: NextPage = () => {
-  const [showScrollButton, setShowScrollButton] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const bodyHeight = document.body.scrollHeight;
-
-      if (bodyHeight - (scrollPosition + windowHeight) < 20) {
-        // User is close to the bottom
-        setShowScrollButton(false);
-      } else {
-        setShowScrollButton(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div>
       <Head>
@@ -109,29 +80,7 @@ const Home: NextPage = () => {
       <ObolEcosystem />
       <Cta />
       <Footer />
-      {showScrollButton && (
-        <button
-          onClick={scrollToTop}
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            right: "20px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "50px",
-            height: "50px",
-            background: "#224737",
-            color: "#fff",
-            border: "none",
-            borderRadius: "50%",
-            cursor: "pointer",
-          }}
-          title="Scroll To Top"
-        >
-          <ChevronUpIcon />
-        </button>
-      )}
+      <ScrollToTop />
     </div>
   );
 };
