@@ -356,6 +356,11 @@ export const ObolEcosystem = () => {
           initial={{ y: 500, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 0.8 }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
         >
           <TeamMemberCard {...card} />
         </motion.div>
@@ -369,6 +374,8 @@ export const ObolEcosystem = () => {
       css={{
         display: "flex",
         flexWrap: "wrap",
+        alignItems: "center",
+        justifyContent: "center",
         gap: "$sm",
         pt: "$lg",
         "@xs": {
@@ -436,6 +443,7 @@ export const ObolEcosystem = () => {
               css={{
                 display: "flex",
                 flexWrap: "wrap",
+                justifyContent: "center",
                 gap: "$xl",
                 pt: "$lg",
               }}

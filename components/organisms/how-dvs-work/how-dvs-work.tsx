@@ -2,17 +2,17 @@ import { Text, Card, Container } from "@obolnetwork/obol-ui";
 
 export const HowDvsWork = () => {
   return (
-    <Container alignItems="start" layout="row">
+    <Container>
+      <Container variant="textContent" ghost>
+        <Text variant="h3">How Distributed Validators work</Text>
+        <Text variant="body">
+          Distributed Validator Technology enables the duties of an Ethereum
+          validator to be performed across a cluster of nodes in order to
+          improve resilience (safety, liveness, or both) as compared to running
+          a validator on a single node.
+        </Text>
+      </Container>
       <Container alignItems="start" ghost layout="row">
-        <Container variant="textContent" ghost>
-          <Text variant="h3">How Distributed Validators work</Text>
-          <Text variant="body">
-            Distributed Validator Technology enables the duties of
-            an Ethereum validator to be performed across a cluster of nodes in order to improve
-            resilience (safety, liveness, or both) as compared to running a
-            validator on a single node.
-          </Text>
-        </Container>
         <Card
           image="/assets/dvs-work/image1.svg"
           variant="image"

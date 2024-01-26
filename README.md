@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, Put personal access token to be able to install our `@obolnetwork/obol-ui` package `.npmrc` file replace the `${NPM_TOKEN}` wit your token.
+First, Put personal access token to be able to install our `@obolnetwork/obol-ui` package `.npmrc` file replace the `${NPM_TOKEN}` with your token.
 
 ```
 @obolnetwork:registry=https://npm.pkg.github.com/

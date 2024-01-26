@@ -12,7 +12,7 @@ export const ObolDvc = () => {
   return (
     <Container alignItems="start">
       <Container
-        css={{ width: "40%", "@sm": { width: "100%" }, gap: "$2xl" }}
+        css={{ width: "100%", "@sm": { width: "100%" }, gap: "$2xl" }}
         variant="textContent"
         ghost
       >
@@ -23,9 +23,10 @@ export const ObolDvc = () => {
           Technology.
         </Text>
         <Text variant="body">
-          Distributed Validator Clusters are multi-operator, fault-tolerant clusters
-          of servers running Ethereum Execution clients, Consensus clients, Distributed Validator clients, 
-          and Validator clients; that combined enable a subset of servers to fail and recover, without a
+          Distributed Validator Clusters are multi-operator, fault-tolerant
+          clusters of servers running Ethereum Execution clients, Consensus
+          clients, Distributed Validator clients, and Validator clients; that
+          combined enable a subset of servers to fail and recover, without a
           Distributed Validator running on this cluster going offline.
         </Text>
       </Container>
@@ -47,16 +48,24 @@ export const ObolDvc = () => {
         <Container css={{ gap: "$2xl" }} variant="textContent" ghost>
           <Text variant="h5">Distributed Validator Cluster</Text>
           <Text variant="body">
-            <Link target="_blank" href="https://github.com/ObolNetwork/charon" style={{display:"inline"}}>Charon</Link> is Obol Network&apos;s Distributed Validator client and first step in enabling trust-minimised validation.
+            <Link
+              target="_blank"
+              href="https://github.com/ObolNetwork/charon"
+              style={{ display: "inline" }}
+            >
+              Charon
+            </Link>{" "}
+            is Obol Network&apos;s Distributed Validator client and first step
+            in enabling trust-minimised validation.
           </Text>
           <Text variant="body">
             Charon enables fault tolerant, high-availability validation,
-            empowering a group of people to collectively run a validator across multiple
-            machines instead of on a single one.
+            empowering a group of people to collectively run a validator across
+            multiple machines instead of on a single one.
           </Text>
           <Text variant="body">
-            The more multi-operator clusters on mainnet the more immutable and resilient to attack Ethereum
-            will become.
+            The more multi-operator clusters on mainnet the more immutable and
+            resilient to attack Ethereum will become.
           </Text>
           <Link target="_blank" href="https://docs.obol.tech/docs/charon/intro">
             Learn More about Charon
@@ -64,9 +73,7 @@ export const ObolDvc = () => {
           </Link>
         </Container>
       </Container>
-      <Text variant="h4">
-        Advantages of a Distributed Validator Cluster
-      </Text>
+      <Text variant="h4">Advantages of a Distributed Validator Cluster</Text>
       <Box>
         <Container className="advantages-obol" layout="row" ghost>
           <Card

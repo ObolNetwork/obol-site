@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         as="main"
         css={{
           minHeight: "100vh",
-          padding: "calc($2xl * 5) calc($3xl * 2)",
+          padding: "0 calc($3xl * 2) calc($xl * 2) calc($3xl * 2)",
           "@sm": {
             padding: "0 1rem",
           },
