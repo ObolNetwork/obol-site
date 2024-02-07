@@ -205,6 +205,15 @@ const tabs: EcosystemTabsProps[] = [
         ],
       },
       {
+        heading: "Corver Roos",
+        image: "/assets/team/Corver.png",
+        subheading: "Tech Lead",
+        links: [
+          { link: "https://twitter.com/corverdev", network: "twitter" },
+          { link: "https://github.com/corverroos", network: "github" },
+        ],
+      },
+      {
         heading: "Chris Battenfield",
         image: "/assets/team/Chris.png",
         subheading: "Product Lead",
