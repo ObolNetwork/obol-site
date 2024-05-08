@@ -26,11 +26,6 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.advancedblockchain.com/",
       },
       {
-        heading: "Infstones",
-        image: "/assets/obol-ecosystem/backers/infstones.svg",
-        logoCardLink: "https://infstones.com/",
-      },
-      {
         heading: "Archetype",
         image: "/assets/obol-ecosystem/backers/archetype.png",
         logoCardLink: "https://www.archetype.fund/",
@@ -104,6 +99,11 @@ const tabs: EcosystemTabsProps[] = [
         heading: "Figment",
         image: "/assets/obol-ecosystem/backers/figment.png",
         logoCardLink: "https://www.figmentcapital.io/",
+      },
+      {
+        heading: "Infstones",
+        image: "/assets/obol-ecosystem/backers/infstones.svg",
+        logoCardLink: "https://infstones.com/",
       },
       {
         heading: "IOSG Ventures",
