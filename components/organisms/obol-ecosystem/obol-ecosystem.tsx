@@ -26,6 +26,11 @@ const tabs: EcosystemTabsProps[] = [
         logoCardLink: "https://www.advancedblockchain.com/",
       },
       {
+        heading: "Infstones",
+        image: "/assets/obol-ecosystem/backers/infstones.svg",
+        logoCardLink: "https://infstones.com/",
+      },
+      {
         heading: "Archetype",
         image: "/assets/obol-ecosystem/backers/archetype.png",
         logoCardLink: "https://www.archetype.fund/",
