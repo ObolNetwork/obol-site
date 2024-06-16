@@ -1,8 +1,10 @@
+'use client';
+
 import { globalCss } from "@obolnetwork/obol-ui";
 import type { AppProps } from "next/app";
 import TopLeftBg from "../public/backgrounds/top-left-bg.svg";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter, usePathname } from "next/navigation";
 
 const globalStyles = globalCss({
   html: {
@@ -23,10 +25,12 @@ const globalStyles = globalCss({
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
-  const router = useRouter();
+  useRouter();
+  
+  const pathname = usePathname()
 
   useEffect(() => {
-    if (router.pathname !== "/blocked") {
+    if (pathname !== "/blocked") {
       const script = document.createElement("script");
       script.src = "https://app.termly.io/embed.min.js";
       script.type = "text/javascript";
@@ -43,7 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       document.body.appendChild(script);
     }
-  }, [router.pathname]);
+  }, [pathname]);
 
   return <Component {...pageProps} />;
 }
