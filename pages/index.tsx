@@ -12,8 +12,47 @@ import { Cta } from "../components/organisms/cta/cta";
 import { Footer } from "../components/organisms/footer/footer";
 import { ObolEcosystem } from "../components/organisms/obol-ecosystem/obol-ecosystem";
 import { RoadMap } from "../components/organisms/roadmap/roadmap";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 0.8 } },
+  exit: { opacity: 0 },
+};
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  exit: { opacity: 0, y: 50 },
+};
+
+const fadeInLeft = {
+  initial: { opacity: 0, x: -50 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  exit: { opacity: 0, x: -50 },
+};
+
+const fadeInRight = {
+  initial: { opacity: 0, x: 50 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  exit: { opacity: 0, x: 50 },
+};
 
 const Home: NextPage = () => {
+  const [heroRef, heroInView] = useInView({ triggerOnce: true });
+  const [ctaRef, ctaInView] = useInView({ triggerOnce: true });
+  const [obolEcosystemRef, obolEcosystemInView] = useInView({ triggerOnce: true });
+  const [ourMissionRef, ourMissionInView] = useInView({ triggerOnce: true });
+  const [howDvsWorkRef, howDvsWorkInView] = useInView({ triggerOnce: true });
+  const [obolDvcRef, obolDvcInView] = useInView({ triggerOnce: true });
+  const [buildWithObolRef, buildWithObolInView] = useInView({
+    triggerOnce: true,
+  });
+  const [distributeYourValidatorsRef, distributeYourValidatorsInView] =
+    useInView({ triggerOnce: true });
+  const [roadMapRef, roadMapInView] = useInView({ triggerOnce: true });
+
   return (
     <div>
       <Head>
@@ -67,17 +106,80 @@ const Home: NextPage = () => {
           gap: "56px",
         }}
       >
-        <HeroSection />
-        <OurMission />
-        <HowDvsWork />
-        <ObolDvc />
-        <BuildWithObol />
+        <motion.div
+          ref={heroRef}
+          initial="initial"
+          animate={heroInView ? "animate" : "exit"}
+          variants={fadeInUp}
+        >
+          <HeroSection />
+        </motion.div>
+        <motion.div
+          ref={ourMissionRef}
+          initial="initial"
+          animate={ourMissionInView ? "animate" : "exit"}
+          variants={fadeInLeft}
+        >
+          <OurMission />
+        </motion.div>
+        <motion.div
+          ref={howDvsWorkRef}
+          initial="initial"
+          animate={howDvsWorkInView ? "animate" : "exit"}
+          variants={fadeInRight}
+        >
+          <HowDvsWork />
+        </motion.div>
+        <motion.div
+          ref={obolDvcRef}
+          initial="initial"
+          animate={obolDvcInView ? "animate" : "exit"}
+          variants={fadeInLeft}
+        >
+          <ObolDvc />
+        </motion.div>
+        <motion.div
+          ref={buildWithObolRef}
+          initial="initial"
+          animate={buildWithObolInView ? "animate" : "exit"}
+          variants={fadeInRight}
+        >
+          <BuildWithObol />
+        </motion.div>
       </Box>
       <Box css={{ "@sm": { mt: "56px" } }} />
-      <DistributeYourValidators />
-      <RoadMap />
-      <ObolEcosystem />
-      <Cta />
+      <motion.div
+        ref={distributeYourValidatorsRef}
+        initial="initial"
+        animate={distributeYourValidatorsInView ? "animate" : "exit"}
+        variants={fadeIn}
+      >
+        <DistributeYourValidators />
+      </motion.div>
+      <motion.div
+        ref={roadMapRef}
+        initial="initial"
+        animate={roadMapInView ? "animate" : "exit"}
+        variants={fadeInUp}
+      >
+        <RoadMap />
+      </motion.div>
+      <motion.div
+        ref={obolEcosystemRef}
+        initial="initial"
+        animate={obolEcosystemInView ? "animate" : "exit"}
+        variants={fadeInLeft}
+      >
+        <ObolEcosystem />
+      </motion.div>
+      <motion.div
+        ref={ctaRef}
+        initial="initial"
+        animate={ctaInView ? "animate" : "exit"}
+        variants={fadeInRight}
+      >
+        <Cta />
+      </motion.div>
       <Footer />
     </div>
   );
