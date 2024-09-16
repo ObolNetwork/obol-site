@@ -36,9 +36,9 @@ export const DistributeYourValidators = (): JSX.Element => {
           color="create"
           as="a"
           target="_blank"
-          href="https://goerli.launchpad.obol.tech"
+          href="https://holesky.launchpad.obol.tech"
         >
-          Launch on Goerli
+          Launch on Holesky
         </Button>
       </TwoColumnSection>
     </Section>
